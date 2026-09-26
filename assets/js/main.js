@@ -39,6 +39,35 @@
   if (scrim) scrim.addEventListener("click", function () { setMenu(false); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false); });
 
+  /* ---------- Inline video (plays in place — auto-starts when it scrolls into view) ---------- */
+  var playInlineVideo = function (host, id, muted) {
+    if (!host || !id || host.classList.contains("is-playing")) return;
+    var iframe = document.createElement("iframe");
+    iframe.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0" + (muted ? "&mute=1" : "");
+    iframe.title = "Video";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    iframe.allowFullscreen = true;
+    host.appendChild(iframe);
+    host.classList.add("is-playing");
+  };
+  var videoTriggers = [].slice.call(document.querySelectorAll("[data-video]"));
+  videoTriggers.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      playInlineVideo(btn.closest(".split__media"), btn.getAttribute("data-video"), false);
+    });
+  });
+  if ("IntersectionObserver" in window && videoTriggers.length) {
+    var vio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          playInlineVideo(en.target.closest(".split__media"), en.target.getAttribute("data-video"), true);
+          vio.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.6 });
+    videoTriggers.forEach(function (btn) { vio.observe(btn); });
+  }
+
   /* ---------- Hero slider ---------- */
   var hSlides = [].slice.call(document.querySelectorAll(".hero__slide"));
   var hDots = document.querySelector(".hero__dots");
