@@ -880,3 +880,12 @@ body.menu-open{ overflow:hidden; }
 .faq details[open] summary::after{ transform:rotate(-135deg); }
 .faq details p{ color:var(--muted); padding:0 4px 24px; max-width:640px; }
 .faq summary:hover{ color:var(--brand); }
+
+/* =============================================================
+   CAPABILITIES — jump-to menu
+   ============================================================= */
+.jump-bar{ background:#fff; border-bottom:1px solid var(--line); padding:18px 0; }
+.jump{ display:flex; flex-wrap:wrap; gap:10px; }
+.jump a{ border:1px solid var(--line); border-radius:999px; padding:8px 16px; font-size:.86rem; font-weight:500; color:#10161a; transition:.2s var(--ease); }
+.jump a:hover{ border-color:var(--brand); color:var(--brand); }
+[id]{ scroll-margin-top:90px; }
