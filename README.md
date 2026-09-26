@@ -30,6 +30,8 @@ products/             The Vision drone family + mission payload
   vision-3.html          Vision 3.0 — VTOL hybrid
   vision-4.html          Vision 4.0 — coaxial platform
   payload-delivery-system.html   Aerial delivery / release module
+  vision-nano.html       Vision Nano — nano-class drone (illustrated; add real photos/specs when ready)
+  sandesh-device.html    Sandesh communication device (illustrated; add real photos/specs when ready)
 
 software/             Decouvertes Software — GCS, T12 Drone App, AI Vision App, Sandesh App
   index.html            Hub + per-app pages (gcs, t12-drone-app, ai-vision-app, sandesh-app)
@@ -50,6 +52,7 @@ assets/
     gallery/            Field-journal photos, the Vision 2.0 spec-sheet poster
     certificates/       DPIIT / startup recognition
     partners/           Partner & client logos
+    products/           Vision Nano and Sandesh Device illustrations (SVG) — swap for photos
     careers/            Team photo used on the careers page and homepage slider
     logo.png, logo-mark.png
   downloads/          Installers served by the Download buttons (GCS .exe, AI Vision .apk)

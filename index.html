@@ -338,42 +338,86 @@
   </div>
 </section>
 
-<!-- ================= PRODUCT FILMSTRIP ================= -->
-<section class="section">
+<!-- ================= PRODUCT SHOWCASE ================= -->
+<section class="section" id="products">
   <div class="container">
     <div class="section-head reveal">
       <div>
-        <span class="eyebrow">Our Platforms</span>
-        <h2>The Vision series</h2>
-        <p>Four indigenous UAV platforms and a specialised mission payload &mdash; built in-house, evolved through the field.</p>
+        <span class="eyebrow">Our Products</span>
+        <h2>Drones and systems built in India</h2>
+        <p>Five UAV platforms, a mission payload and a field communication device &mdash; designed in-house and evolved through the field.</p>
       </div>
-      <a class="tlink" href="products/index.html">View all products <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="head-actions">
+        <a class="tlink" href="products/index.html">View all products <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <div class="arrows">
+          <button data-rail-prev aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 6-6 6 6 6"/></svg></button>
+          <button data-rail-next aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6 6 6-6 6"/></svg></button>
+        </div>
+      </div>
     </div>
-    <div class="filmstrip reveal d1">
-      <a class="filmstrip__item" href="products/vision-1.html">
-        <img loading="lazy" decoding="async" data-fallback src="assets/img/gallery/airframe-driveway.jpg" alt="Vision 1.0" />
-        <span class="filmstrip__tag">First Platform</span>
-        <span class="filmstrip__label">Vision 1.0<small>Proof-of-concept quadcopter</small></span>
+    <div class="showcase reveal d1" data-rail>
+      <a class="pcard" href="products/vision-1.html">
+        <div class="pcard__media"><img loading="lazy" decoding="async" data-fallback src="assets/img/gallery/airframe-driveway.jpg" alt="Vision 1.0" /><span class="pcard__tag">First Platform</span></div>
+        <div class="pcard__body">
+          <h3>Vision 1.0</h3>
+          <p class="pcard__sub">Proof-of-concept quadcopter</p>
+          <ul class="pcard__chips"><li>Quadcopter</li><li>Proof of concept</li></ul>
+          <span class="pcard__go">Explore <span class="pcard__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </div>
       </a>
-      <a class="filmstrip__item" href="products/vision-2.html">
-        <img loading="lazy" decoding="async" data-fallback src="assets/img/gallery/vision-desk.jpg" alt="Vision 2.0" />
-        <span class="filmstrip__tag">Heavy-Lift</span>
-        <span class="filmstrip__label">Vision 2.0<small>Foldable heavy-lift quadcopter</small></span>
+      <a class="pcard" href="products/vision-2.html">
+        <div class="pcard__media"><img loading="lazy" decoding="async" data-fallback src="assets/img/gallery/vision-desk.jpg" alt="Vision 2.0" /><span class="pcard__tag">Heavy-Lift</span></div>
+        <div class="pcard__body">
+          <h3>Vision 2.0</h3>
+          <p class="pcard__sub">Foldable heavy-lift quadcopter</p>
+          <ul class="pcard__chips"><li>Foldable</li><li>GPS-denied nav</li><li>PTZ camera</li></ul>
+          <span class="pcard__go">Explore <span class="pcard__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </div>
       </a>
-      <a class="filmstrip__item" href="products/vision-3.html">
-        <img loading="lazy" decoding="async" data-fallback src="assets/img/hero/flight-clouds-1.jpg" alt="Vision 3.0" />
-        <span class="filmstrip__tag">VTOL Hybrid</span>
-        <span class="filmstrip__label">Vision 3.0<small>Fixed-wing + rotor hybrid</small></span>
+      <a class="pcard" href="products/vision-3.html">
+        <div class="pcard__media"><img loading="lazy" decoding="async" data-fallback src="assets/img/hero/flight-clouds-1.jpg" alt="Vision 3.0" /><span class="pcard__tag">VTOL Hybrid</span></div>
+        <div class="pcard__body">
+          <h3>Vision 3.0</h3>
+          <p class="pcard__sub">Fixed-wing endurance, rotor take-off</p>
+          <ul class="pcard__chips"><li>No runway</li><li>Wide-area ISR</li></ul>
+          <span class="pcard__go">Explore <span class="pcard__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </div>
       </a>
-      <a class="filmstrip__item" href="products/vision-4.html">
-        <img loading="lazy" decoding="async" data-fallback src="assets/img/gallery/ground-setup-3.jpg" alt="Vision 4.0" />
-        <span class="filmstrip__tag">Coaxial</span>
-        <span class="filmstrip__label">Vision 4.0<small>Compact coaxial platform</small></span>
+      <a class="pcard" href="products/vision-4.html">
+        <div class="pcard__media"><img loading="lazy" decoding="async" data-fallback src="assets/img/gallery/ground-setup-3.jpg" alt="Vision 4.0" /><span class="pcard__tag">Coaxial</span></div>
+        <div class="pcard__body">
+          <h3>Vision 4.0</h3>
+          <p class="pcard__sub">Compact coaxial platform</p>
+          <ul class="pcard__chips"><li>Compact</li><li>Wind-resilient</li></ul>
+          <span class="pcard__go">Explore <span class="pcard__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </div>
       </a>
-      <a class="filmstrip__item" href="products/payload-delivery-system.html">
-        <img loading="lazy" decoding="async" data-fallback src="assets/img/hero/hero-briefing.jpg" alt="Precision Aerial Delivery System" />
-        <span class="filmstrip__tag">Mission Payload</span>
-        <span class="filmstrip__label">Delivery System<small>Field-evaluated with the Army</small></span>
+      <a class="pcard" href="products/vision-nano.html">
+        <div class="pcard__media"><img loading="lazy" decoding="async" data-fallback src="assets/img/products/vision-nano.svg" alt="Vision Nano" /><span class="pcard__tag">Nano Class</span></div>
+        <div class="pcard__body">
+          <h3>Vision Nano</h3>
+          <p class="pcard__sub">Nano drone for video and surveillance</p>
+          <ul class="pcard__chips"><li>Videography</li><li>Surveillance</li></ul>
+          <span class="pcard__go">Explore <span class="pcard__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </div>
+      </a>
+      <a class="pcard" href="products/payload-delivery-system.html">
+        <div class="pcard__media"><img loading="lazy" decoding="async" data-fallback src="assets/img/hero/hero-briefing.jpg" alt="Delivery System" /><span class="pcard__tag">Mission Payload</span></div>
+        <div class="pcard__body">
+          <h3>Delivery System</h3>
+          <p class="pcard__sub">Controlled aerial delivery of small stores</p>
+          <ul class="pcard__chips"><li>Quick-release</li><li>Army-evaluated</li></ul>
+          <span class="pcard__go">Explore <span class="pcard__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </div>
+      </a>
+      <a class="pcard" href="products/sandesh-device.html">
+        <div class="pcard__media"><img loading="lazy" decoding="async" data-fallback src="assets/img/products/sandesh-device.svg" alt="Sandesh Device" /><span class="pcard__tag">Communication</span></div>
+        <div class="pcard__body">
+          <h3>Sandesh Device</h3>
+          <p class="pcard__sub">Encrypted comms with no network</p>
+          <ul class="pcard__chips"><li>No network needed</li><li>Encrypted mesh</li></ul>
+          <span class="pcard__go">Explore <span class="pcard__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </div>
       </a>
     </div>
   </div>
