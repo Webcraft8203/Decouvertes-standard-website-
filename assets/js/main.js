@@ -115,39 +115,6 @@
     hReset();
   }
 
-  /* ---------- Product selector ---------- */
-  var pm = document.querySelector("[data-pm]");
-  if (pm) {
-    var pmTabs = [].slice.call(pm.querySelectorAll('[role="tab"]'));
-    var pmPanels = [].slice.call(pm.querySelectorAll(".pm__panel"));
-    var pmTimer;
-    var pmSelect = function (i, focus) {
-      pmTabs.forEach(function (t, k) {
-        t.classList.toggle("is-active", k === i);
-        t.setAttribute("aria-selected", k === i ? "true" : "false");
-        t.tabIndex = k === i ? 0 : -1;
-      });
-      pmPanels.forEach(function (p, k) {
-        p.classList.toggle("is-active", k === i);
-        p.setAttribute("aria-hidden", k === i ? "false" : "true");
-      });
-      if (focus) pmTabs[i].focus();
-    };
-    var canHover = window.matchMedia && window.matchMedia("(hover: hover)").matches;
-    pmTabs.forEach(function (t, i) {
-      t.addEventListener("click", function () { pmSelect(i); });
-      if (canHover) {
-        t.addEventListener("mouseenter", function () { clearTimeout(pmTimer); pmTimer = setTimeout(function () { pmSelect(i); }, 110); });
-        t.addEventListener("mouseleave", function () { clearTimeout(pmTimer); });
-      }
-      t.addEventListener("keydown", function (e) {
-        var n = pmTabs.length;
-        if (e.key === "ArrowDown" || e.key === "ArrowRight") { e.preventDefault(); pmSelect((i + 1) % n, true); }
-        else if (e.key === "ArrowUp" || e.key === "ArrowLeft") { e.preventDefault(); pmSelect((i - 1 + n) % n, true); }
-      });
-    });
-  }
-
   /* ---------- Capabilities carousel ---------- */
   var caps = document.querySelector(".caps");
   var prev = document.querySelector("[data-caps-prev]");

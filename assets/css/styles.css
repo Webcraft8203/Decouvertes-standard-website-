@@ -867,46 +867,28 @@ body.menu-open{ overflow:hidden; }
 [id]{ scroll-margin-top:90px; }
 
 /* =============================================================
-   HOME — PRODUCT SHOWCASE (light)
+   HOME — PRODUCT SHOWCASE (photo-led, staggered)
    ============================================================= */
-.pm{ background:#fff; padding:clamp(72px,9vw,120px) 0; }
-.pm__grid{ display:grid; grid-template-columns:minmax(300px,5fr) minmax(0,7fr); gap:clamp(40px,7vw,104px); align-items:start; }
-.pm__intro, .pm__stage{ min-width:0; }
-.pm__intro h2{ font-size:clamp(1.9rem,3.4vw,2.7rem); line-height:1.12; margin-bottom:16px; }
-.pm__intro > p{ color:var(--muted); max-width:44ch; }
-.pm__intro .tlink{ margin-top:20px; }
-.pm__list{ margin-top:44px; border-top:1px solid var(--line); }
-.pm__tab{
-  position:relative; display:grid; grid-template-columns:1fr auto; align-items:baseline; column-gap:16px; width:100%;
-  text-align:left; padding:19px 0; border-bottom:1px solid var(--line); color:#8a9298;
-  transition:color .25s var(--ease);
-}
-.pm__tab::after{ content:""; position:absolute; left:0; bottom:-1px; height:2px; width:0; background:var(--brand); transition:width .45s var(--ease); }
-.pm__name{ font-size:1.3rem; font-weight:500; letter-spacing:-.005em; }
-.pm__kind{ font-size:.86rem; font-weight:400; }
-.pm__tab:hover, .pm__tab.is-active{ color:#10161a; }
-.pm__tab.is-active::after{ width:100%; }
-.pm__tab:focus-visible{ outline:2px solid var(--brand); outline-offset:4px; }
-
-.pm__stage{ display:grid; }
-.pm__panel{ grid-area:1 / 1; opacity:0; visibility:hidden; transition:opacity .55s var(--ease), visibility .55s; }
-.pm__panel.is-active{ opacity:1; visibility:visible; }
-.pm__img{ aspect-ratio:16/11; background:var(--band); border-radius:12px; overflow:hidden; }
-.pm__img img{ width:100%; height:100%; object-fit:cover; transform:scale(1.04); transition:transform 1.1s var(--ease); }
-.pm__panel.is-active .pm__img img{ transform:scale(1); }
-.pm__meta{ display:grid; grid-template-columns:1fr auto; gap:32px; align-items:end; padding-top:26px; }
-.pm__meta h3{ font-size:1.7rem; margin-bottom:10px; }
-.pm__meta p{ color:var(--muted); max-width:50ch; line-height:1.7; }
-.pm__meta .btn{ white-space:nowrap; }
-
+.ptiles{ display:grid; grid-template-columns:repeat(12, minmax(0,1fr)); column-gap:clamp(20px,2.4vw,32px); row-gap:clamp(44px,5vw,64px); }
+.ptile{ display:block; }
+.ptile--4{ grid-column:span 4; } .ptile--5{ grid-column:span 5; } .ptile--6{ grid-column:span 6; } .ptile--7{ grid-column:span 7; }
+.ptile__img{ overflow:hidden; border-radius:4px; background:var(--band); }
+.ptile--h1 .ptile__img{ height:clamp(240px,29vw,420px); }
+.ptile--h2 .ptile__img{ height:clamp(220px,22vw,320px); }
+.ptile--h3 .ptile__img{ height:clamp(220px,25vw,360px); }
+.ptile__img img{ width:100%; height:100%; object-fit:cover; transition:transform .9s var(--ease); }
+.ptile:hover .ptile__img img{ transform:scale(1.035); }
+.ptile h3{ font-size:1.3rem; margin:20px 0 8px; }
+.ptile p{ color:var(--muted); max-width:52ch; }
+.ptile__more{ display:inline-flex; align-items:center; gap:8px; margin-top:14px; font-weight:500; font-size:.92rem; color:var(--brand); transition:gap .25s var(--ease); }
+.ptile__more svg{ width:15px; height:15px; }
+.ptile:hover .ptile__more{ gap:12px; }
 @media (max-width:900px){
-  .pm__grid{ grid-template-columns:minmax(0,1fr); gap:36px; }
-  .pm__list{ display:flex; gap:26px; overflow-x:auto; margin:28px calc(var(--gutter) * -1) 0; padding:0 var(--gutter); border-top:0; border-bottom:1px solid var(--line); scrollbar-width:none; }
-  .pm__list::-webkit-scrollbar{ display:none; }
-  .pm__tab{ display:block; width:auto; flex-shrink:0; white-space:nowrap; padding:14px 0; border-bottom:0; }
-  .pm__tab::after{ bottom:0; }
-  .pm__kind{ display:none; }
-  .pm__name{ font-size:1rem; }
-  .pm__meta{ grid-template-columns:1fr; gap:24px; }
-  .pm__meta .btn{ justify-self:start; }
+  .ptiles{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+  .ptile--4, .ptile--5, .ptile--6, .ptile--7{ grid-column:span 1; }
+  .ptile--h1 .ptile__img, .ptile--h2 .ptile__img, .ptile--h3 .ptile__img{ height:clamp(200px,34vw,280px); }
+}
+@media (max-width:600px){
+  .ptiles{ grid-template-columns:minmax(0,1fr); }
+  .ptile--h1 .ptile__img, .ptile--h2 .ptile__img, .ptile--h3 .ptile__img{ height:clamp(200px,58vw,300px); }
 }
