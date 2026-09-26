@@ -47,6 +47,7 @@
     iframe.title = "Video";
     iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
     iframe.allowFullscreen = true;
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
     host.appendChild(iframe);
     host.classList.add("is-playing");
   };
