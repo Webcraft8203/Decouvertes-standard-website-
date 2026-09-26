@@ -822,3 +822,17 @@ body.menu-open{ overflow:hidden; }
 .compare-table thead th:first-child{ background:var(--band-soft); }
 .compare-table tbody tr:hover td{ background:var(--band-soft); }
 .compare-table tbody tr:hover td:first-child{ background:var(--band-soft); }
+
+/* =============================================================
+   APPS GRID (software suite cards)
+   ============================================================= */
+.apps-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
+.app-card{ display:flex; flex-direction:column; background:#fff; border:1px solid var(--line); border-radius:var(--r-card); padding:28px 26px; transition:transform .25s var(--ease), box-shadow .25s var(--ease); }
+.app-card:hover{ transform:translateY(-4px); box-shadow:var(--shadow); }
+.app-card__icon{ width:52px; height:52px; border-radius:12px; background:var(--charcoal); color:#fff; display:grid; place-items:center; margin-bottom:18px; }
+.app-card__icon svg{ width:24px; height:24px; }
+.app-card h3{ font-size:1.05rem; margin-bottom:8px; }
+.app-card p{ color:var(--muted); font-size:.9rem; }
+.app-card__tag{ margin-top:auto; padding-top:16px; font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; font-weight:500; color:var(--brand); }
+@media (max-width:900px){ .apps-grid{ grid-template-columns:1fr 1fr; } }
+@media (max-width:560px){ .apps-grid{ grid-template-columns:1fr; } }
