@@ -23,7 +23,7 @@
   --brand-ink:  #d1571b;
   --amber:      #F5B301;
   --live:       #3ddc84;
-  --container:  1280px;
+  --container:  clamp(1280px, 90vw, 1600px);
   --gutter:     clamp(20px, 5vw, 44px);
   --ease:       cubic-bezier(.22,.61,.36,1);
   --shadow:     0 30px 70px -30px rgba(16,22,26,.4);
@@ -460,12 +460,14 @@ body.menu-open{ overflow:hidden; }
 .cert-chip:hover{ border-color:var(--brand); color:var(--ink); }
 .cert-chip.is-active{ background:var(--ink); color:#fff; border-color:var(--ink); }
 .cert-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
-.cert-card{ border:1px solid var(--line); border-radius:var(--r-card); overflow:hidden; background:#fff; transition:.25s var(--ease); }
+.cert-card{ display:block; border:1px solid var(--line); border-radius:var(--r-card); overflow:hidden; background:#fff; transition:.25s var(--ease); }
 .cert-card:hover{ transform:translateY(-5px); box-shadow:var(--shadow); }
 .cert-card__media{ aspect-ratio:16/11; background:var(--band-soft); display:grid; place-items:center; padding:24px; }
+.cert-card__media img{ width:100%; height:100%; object-fit:contain; }
+.cert-card__media svg{ width:52px; height:52px; color:var(--brand); }
 .cert-card__body{ padding:20px 22px 24px; border-top:1px solid var(--line); }
-.cert-card__body h3{ font-size:1.08rem; }
-.cert-card__body span{ font-size:.9rem; color:var(--muted); }
+.cert-card__body h3{ font-size:1.08rem; margin-bottom:8px; }
+.cert-card__body span{ display:block; font-size:.9rem; line-height:1.55; color:var(--muted); }
 .cert-card.is-hidden{ display:none; }
 @media (max-width:900px){ .cert-grid{ grid-template-columns:1fr 1fr; } }
 @media (max-width:600px){ .cert-grid{ grid-template-columns:1fr; } }
@@ -773,6 +775,7 @@ body.menu-open{ overflow:hidden; }
    ============================================================= */
 .filmstrip{
   display:grid; grid-auto-flow:column; grid-auto-columns:200px; gap:18px;
+  justify-content:safe center;
   overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; padding-bottom:4px;
 }
 .filmstrip::-webkit-scrollbar{ display:none; }
@@ -790,3 +793,32 @@ body.menu-open{ overflow:hidden; }
 .filmstrip__label{ position:absolute; left:14px; right:14px; bottom:14px; z-index:2; color:#fff; font-weight:500; font-size:1rem; }
 .filmstrip__label small{ display:block; margin-top:3px; font-weight:400; font-size:.76rem; color:rgba(255,255,255,.75); }
 @media (max-width:600px){ .filmstrip{ grid-auto-columns:42vw; } }
+
+/* =============================================================
+   REASONS (icon + text list — deliberately not a boxed card grid,
+   so it reads differently from .tiles)
+   ============================================================= */
+.reasons{ display:grid; grid-template-columns:1fr 1fr; column-gap:56px; row-gap:34px; }
+.reason{ display:flex; gap:18px; align-items:flex-start; padding-top:26px; border-top:1px solid var(--line); }
+.reason__icon{ width:46px; height:46px; border-radius:10px; background:var(--band); color:var(--brand); display:grid; place-items:center; flex-shrink:0; }
+.reason__icon svg{ width:22px; height:22px; }
+.reason h3{ font-size:1.05rem; margin-bottom:6px; }
+.reason p{ color:var(--muted); font-size:.92rem; }
+@media (max-width:700px){ .reasons{ grid-template-columns:1fr; } }
+
+/* =============================================================
+   COMPARE TABLE (Apple-style side-by-side product comparison)
+   ============================================================= */
+.compare-wrap{ overflow-x:auto; border:1px solid var(--line); border-radius:var(--r-card); -webkit-overflow-scrolling:touch; }
+.compare-table{ width:100%; min-width:820px; border-collapse:collapse; }
+.compare-table th, .compare-table td{ padding:16px 20px; text-align:left; font-size:.9rem; border-bottom:1px solid var(--line); white-space:nowrap; }
+.compare-table thead th{ font-family:var(--font-head); font-weight:700; color:var(--ink); background:var(--band-soft); font-size:.92rem; }
+.compare-table tbody td{ color:var(--ink-soft); }
+.compare-table tbody tr:last-child td{ border-bottom:0; }
+.compare-table th:first-child, .compare-table td:first-child{
+  position:sticky; left:0; z-index:1; background:#fff;
+  font-weight:500; color:var(--muted); box-shadow:1px 0 0 var(--line);
+}
+.compare-table thead th:first-child{ background:var(--band-soft); }
+.compare-table tbody tr:hover td{ background:var(--band-soft); }
+.compare-table tbody tr:hover td:first-child{ background:var(--band-soft); }
