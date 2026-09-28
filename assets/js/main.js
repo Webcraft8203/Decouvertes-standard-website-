@@ -128,38 +128,41 @@
     next.addEventListener("click", function () { caps.scrollBy({ left: step(), behavior: "smooth" }); });
   }
 
-  /* ---------- Partners slider (mobile/tablet swipe + dots) ---------- */
-  var pTrack = document.querySelector("[data-partners]");
-  var pDots = document.querySelector("[data-partners-dots]");
-  if (pTrack && pDots) {
-    var pChips = [].slice.call(pTrack.children);
-    pChips.forEach(function (_, i) {
+  /* ---------- Track + dots slider (mobile/tablet swipe, reused by partners & people) ---------- */
+  var initTrackDots = function (trackSel, dotsSel, label) {
+    var track = document.querySelector(trackSel);
+    var dots = document.querySelector(dotsSel);
+    if (!track || !dots) return;
+    var chips = [].slice.call(track.children);
+    chips.forEach(function (_, i) {
       var d = document.createElement("button");
       d.type = "button";
-      d.setAttribute("aria-label", "Show logo " + (i + 1));
+      d.setAttribute("aria-label", label + " " + (i + 1));
       if (i === 0) d.classList.add("is-active");
       d.addEventListener("click", function () {
-        pTrack.scrollTo({ left: pChips[i].offsetLeft - pTrack.offsetLeft, behavior: "smooth" });
+        track.scrollTo({ left: chips[i].offsetLeft - track.offsetLeft, behavior: "smooth" });
       });
-      pDots.appendChild(d);
+      dots.appendChild(d);
     });
-    var pDotEls = [].slice.call(pDots.children);
-    var pTicking = false;
-    var pSyncActive = function () {
-      var mid = pTrack.scrollLeft + pTrack.clientWidth / 2;
+    var dotEls = [].slice.call(dots.children);
+    var ticking = false;
+    var syncActive = function () {
+      var mid = track.scrollLeft + track.clientWidth / 2;
       var closest = 0, best = Infinity;
-      pChips.forEach(function (chip, i) {
-        var d = Math.abs((chip.offsetLeft - pTrack.offsetLeft + chip.offsetWidth / 2) - mid);
+      chips.forEach(function (chip, i) {
+        var d = Math.abs((chip.offsetLeft - track.offsetLeft + chip.offsetWidth / 2) - mid);
         if (d < best) { best = d; closest = i; }
       });
-      pDotEls.forEach(function (d, i) { d.classList.toggle("is-active", i === closest); });
-      pTicking = false;
+      dotEls.forEach(function (d, i) { d.classList.toggle("is-active", i === closest); });
+      ticking = false;
     };
-    pTrack.addEventListener("scroll", function () {
-      if (!pTicking) { window.requestAnimationFrame(pSyncActive); pTicking = true; }
+    track.addEventListener("scroll", function () {
+      if (!ticking) { window.requestAnimationFrame(syncActive); ticking = true; }
     }, { passive: true });
-    window.addEventListener("resize", pSyncActive);
-  }
+    window.addEventListener("resize", syncActive);
+  };
+  initTrackDots("[data-partners]", "[data-partners-dots]", "Show logo");
+  initTrackDots("[data-people]", "[data-people-dots]", "Show leader");
 
   /* ---------- Reveal on scroll ---------- */
   var revealEls = document.querySelectorAll(".reveal");
