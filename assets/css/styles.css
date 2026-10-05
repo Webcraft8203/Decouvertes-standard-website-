@@ -1005,3 +1005,13 @@ body.menu-open{ overflow:hidden; }
   .cat-row{ grid-template-columns:1fr; }
   .cat-row__facts{ grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
+
+/* =============================================================
+   PRODUCT PAGES — field video and photo gallery
+   ============================================================= */
+.field-video video{ width:100%; display:block; border-radius:10px; background:#0c1213; max-height:72vh; }
+.field-gallery{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.field-gallery figure{ margin:0; border-radius:10px; overflow:hidden; background:var(--band); }
+.field-gallery img{ width:100%; aspect-ratio:4/5; object-fit:cover; display:block; transition:transform .6s var(--ease); }
+.field-gallery figure:hover img{ transform:scale(1.03); }
+@media (max-width:700px){ .field-gallery{ grid-template-columns:1fr; } }
