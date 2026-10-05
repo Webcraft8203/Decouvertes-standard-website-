@@ -944,6 +944,8 @@ body.menu-open{ overflow:hidden; }
 
 .bt--tall{ grid-column:1; grid-row:1 / span 2; }
 .bt--tall .bt__img{ flex:1; height:auto; min-height:260px; }
+.bt--tall .bt__img{ background:#fff; }
+.bt--tall .bt__img img{ object-fit:contain; padding:6px; }
 
 .bt--wide{ justify-content:center; min-height:340px; color:#fff; background:#10161a; }
 .bt--w3{ grid-column:span 3; } .bt--w2{ grid-column:span 2; }
@@ -972,3 +974,11 @@ body.menu-open{ overflow:hidden; }
   .bt--wide{ min-height:300px; }
   .bt__panel{ margin:0 16px; padding:22px; }
 }
+
+.img-caption{ position:absolute; left:14px; bottom:12px; font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; color:#fff; background:rgba(8,12,14,.6); padding:5px 9px; border-radius:3px; }
+
+.spec-table{ width:100%; border-collapse:collapse; margin-top:8px; }
+.spec-table th, .spec-table td{ text-align:left; padding:13px 0; border-bottom:1px solid var(--line); font-size:.92rem; vertical-align:top; }
+.spec-table th{ width:42%; color:var(--muted); font-weight:500; padding-right:16px; }
+.spec-table td{ color:var(--ink,#10161a); }
+.spec-note{ margin-top:14px; font-size:.8rem; color:var(--muted-2,#8a9298); }
