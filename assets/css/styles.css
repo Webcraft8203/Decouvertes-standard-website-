@@ -302,6 +302,8 @@ body.menu-open{ overflow:hidden; }
 .split__text .btn, .split__text .tlink{ margin-top:26px; }
 .split__media{ position:relative; border-radius:var(--r-img); overflow:hidden; aspect-ratio:16/10.5; background:#0c1213; }
 .split__media img{ width:100%; height:100%; object-fit:cover; }
+.split__media--full{ background:#fff; }
+.split__media--full img{ object-fit:contain; }
 .split__media iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
 .split__play{
   position:absolute; inset:0; margin:auto; width:74px; height:74px; border-radius:999px;
@@ -340,6 +342,10 @@ body.menu-open{ overflow:hidden; }
 .cap:hover .cap__img{ box-shadow:0 30px 55px -26px rgba(20,28,32,.45); }
 .cap__img img{ width:100%; height:100%; object-fit:cover; transition:transform .6s var(--ease); }
 .cap:hover .cap__img img{ transform:scale(1.06); }
+.caps .cap__img{ aspect-ratio:3/2; }
+.cap__img--full{ background:#fff; }
+.cap__img--full img{ object-fit:contain; }
+.cap:hover .cap__img--full img{ transform:none; }
 .cap h3{ margin-top:20px; font-size:1.16rem; min-height:2.8rem; transition:color .2s var(--ease); }
 .cap:hover h3{ color:var(--brand); }
 .cap p{ margin-top:8px; color:var(--muted); font-size:.94rem; }
