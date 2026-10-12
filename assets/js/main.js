@@ -88,6 +88,15 @@
       hDots.appendChild(d);
     });
     var hDotEls = [].slice.call(hDots.children);
+    /* Only the first slide's image is in the markup; the rest load once the
+       page has finished, or earlier if a slide is opened first. */
+    var hLoadBg = function (slide) {
+      if (!slide.dataset.bg) return;
+      slide.style.backgroundImage = "url('" + slide.dataset.bg + "')";
+      delete slide.dataset.bg;
+    };
+    var hLoadAllBg = function () { hSlides.forEach(hLoadBg); };
+    if (document.readyState === "complete") hLoadAllBg(); else window.addEventListener("load", hLoadAllBg);
     var hVideo = function () { return hSlides[hIdx].querySelector("video"); };
     /* Video slides load their film only when first shown, play it through
        once, then hand back to the slideshow. */
@@ -109,6 +118,7 @@
       hSlides[hIdx].classList.remove("is-active");
       hDotEls[hIdx].classList.remove("is-active");
       hIdx = (n + hSlides.length) % hSlides.length;
+      hLoadBg(hSlides[hIdx]);
       hSlides[hIdx].classList.add("is-active");
       hDotEls[hIdx].classList.add("is-active");
       if (hCurrentEl) hCurrentEl.textContent = hIdx + 1;
