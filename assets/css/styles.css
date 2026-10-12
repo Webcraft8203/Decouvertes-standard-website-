@@ -145,9 +145,9 @@ section[id],[id]{ scroll-margin-top:80px; }
   width:min(370px, 86vw); background:#fff;
   transform:translateX(-102%); transition:transform .38s var(--ease);
   display:flex; flex-direction:column; padding:22px 26px 32px;
-  box-shadow:30px 0 80px -30px rgba(0,0,0,.5); overflow-y:auto;
+  overflow-y:auto;
 }
-.drawer.is-open{ transform:translateX(0); }
+.drawer.is-open{ transform:translateX(0); box-shadow:30px 0 80px -30px rgba(0,0,0,.5); }
 .drawer__top{ display:flex; align-items:center; justify-content:space-between; padding-bottom:20px; border-bottom:1px solid var(--line); margin-bottom:10px; }
 .drawer__top img{ height:34px; }
 .drawer__close{ width:40px; height:40px; display:grid; place-items:center; border-radius:8px; transition:.2s var(--ease); }
@@ -1030,3 +1030,21 @@ body.menu-open{ overflow:hidden; }
 .coming-soon h1{ font-size:clamp(2.2rem,5vw,3.4rem); margin:12px 0 16px; }
 .coming-soon p{ color:var(--muted); font-size:1.05rem; }
 .coming-soon .cta__actions{ justify-content:center; margin-top:28px; }
+
+/* =============================================================
+   LARGE SCREENS — proportional scale-up
+   The layout is designed for ~1800px. Beyond that the whole page is
+   scaled in steps (type, spacing and media together) so it fills
+   QHD / 4K / 5K displays instead of sitting small in the middle.
+   Each step also needs enough viewport height, so ultrawide
+   monitors pick a smaller step and the hero still fits the screen.
+   ============================================================= */
+@media (min-width:2000px) and (min-height:1050px){ html{ zoom:1.1; } }
+@media (min-width:2240px) and (min-height:1180px){ html{ zoom:1.25; } }
+@media (min-width:2560px) and (min-height:1300px){ html{ zoom:1.4; } }
+@media (min-width:2880px) and (min-height:1500px){ html{ zoom:1.6; } }
+@media (min-width:3200px) and (min-height:1700px){ html{ zoom:1.8; } }
+@media (min-width:3840px) and (min-height:1950px){ html{ zoom:2.1; } }
+@media (min-width:4480px) and (min-height:2350px){ html{ zoom:2.5; } }
+@media (min-width:5120px) and (min-height:2700px){ html{ zoom:2.85; } }
+@media (min-width:6000px) and (min-height:3100px){ html{ zoom:3.3; } }
