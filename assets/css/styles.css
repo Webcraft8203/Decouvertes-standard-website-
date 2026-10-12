@@ -986,6 +986,7 @@ body.menu-open{ overflow:hidden; }
 .spec-table th{ width:42%; color:var(--muted); font-weight:500; padding-right:16px; }
 .spec-table td{ color:var(--ink,#10161a); }
 .spec-note{ margin-top:14px; font-size:.8rem; color:var(--muted-2,#8a9298); }
+.spec-poster{ margin-top:20px; }
 
 /* =============================================================
    PRODUCTS — catalogue rows
@@ -1019,6 +1020,12 @@ body.menu-open{ overflow:hidden; }
 .field-gallery img{ width:100%; aspect-ratio:4/5; object-fit:cover; display:block; transition:transform .6s var(--ease); }
 .field-gallery figure:hover img{ transform:scale(1.03); }
 @media (max-width:700px){ .field-gallery{ grid-template-columns:1fr; } }
+.field-gallery--wide{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+.field-gallery--wide img{ aspect-ratio:16/9; }
+.field-gallery--views{ margin-top:16px; }
+.field-gallery--views figure{ background:#fff; border:1px solid var(--line); }
+.field-gallery--views img{ aspect-ratio:4/3; object-fit:contain; }
+@media (max-width:700px){ .field-gallery--wide{ grid-template-columns:1fr; } }
 
 /* =============================================================
    COMING SOON (placeholder pages)
