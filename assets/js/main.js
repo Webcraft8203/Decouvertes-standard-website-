@@ -88,28 +88,54 @@
       hDots.appendChild(d);
     });
     var hDotEls = [].slice.call(hDots.children);
+    var hVideo = function () { return hSlides[hIdx].querySelector("video"); };
+    /* Video slides load their film only when first shown, play it through
+       once, then hand back to the slideshow. */
+    function hPlayVideo() {
+      var v = hVideo();
+      if (!v || reduceMotion || v.dataset.failed) return;
+      if (!v.getAttribute("src")) v.src = v.dataset.src;
+      var p = v.play();
+      if (p && p.catch) p.catch(function () { v.dataset.failed = "1"; hReset(); });
+    }
+    function hSlideMs() {
+      var v = hVideo();
+      if (!v || reduceMotion || v.dataset.failed) return HERO_MS;
+      return isFinite(v.duration) ? (v.duration - v.currentTime) * 1000 + 400 : 90000;
+    }
     function hGo(n) {
+      var oldV = hVideo();
+      if (oldV) { oldV.pause(); if (oldV.readyState) oldV.currentTime = 0; }
       hSlides[hIdx].classList.remove("is-active");
       hDotEls[hIdx].classList.remove("is-active");
       hIdx = (n + hSlides.length) % hSlides.length;
       hSlides[hIdx].classList.add("is-active");
       hDotEls[hIdx].classList.add("is-active");
       if (hCurrentEl) hCurrentEl.textContent = hIdx + 1;
+      if (!hPaused) hPlayVideo();
     }
     function hReset() {
-      clearInterval(hTimer);
+      clearTimeout(hTimer);
       if (hPaused) return;
-      hTimer = setInterval(function () { hGo(hIdx + 1); }, HERO_MS);
+      hTimer = setTimeout(function () { hGo(hIdx + 1); hReset(); }, hSlideMs());
     }
+    hSlides.forEach(function (slide) {
+      var v = slide.querySelector("video");
+      if (!v) return;
+      v.addEventListener("loadedmetadata", function () { if (slide.classList.contains("is-active")) hReset(); });
+      v.addEventListener("ended", function () { if (slide.classList.contains("is-active") && !hPaused) { hGo(hIdx + 1); hReset(); } });
+      v.addEventListener("error", function () { v.dataset.failed = "1"; if (slide.classList.contains("is-active")) hReset(); });
+    });
     var heroEl = document.querySelector(".hero");
-    heroEl.addEventListener("mouseenter", function () { clearInterval(hTimer); });
+    heroEl.addEventListener("mouseenter", function () { if (!hVideo()) clearTimeout(hTimer); });
     heroEl.addEventListener("mouseleave", hReset);
     if (hPauseBtn) {
       hPauseBtn.addEventListener("click", function () {
         hPaused = !hPaused;
         hPauseBtn.classList.toggle("is-paused", hPaused);
         hPauseBtn.setAttribute("aria-label", hPaused ? "Play slideshow" : "Pause slideshow");
-        if (hPaused) clearInterval(hTimer); else hReset();
+        if (hPaused) { clearTimeout(hTimer); if (hVideo()) hVideo().pause(); }
+        else { hPlayVideo(); hReset(); }
       });
     }
     hReset();
