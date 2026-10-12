@@ -93,8 +93,8 @@ GitHub Pages, S3, nginx…) — the URL structure matches the folder structure
   installers are large (~120 MB total) — host them on storage/CDN if your static
   host limits file size. The homepage documentary is a YouTube embed, which only
   plays from a hosted `https://` site (opened from disk it shows Error 153).
-- **Social links:** the footer icons and the blog's "Follow on LinkedIn" button
-  currently point to `#` — add the real profile URLs.
+- **Social links:** the footer icons (YouTube, LinkedIn, Instagram) link to the
+  company profiles — the same three links are repeated in every page footer.
 - **Contact:** the site has no backend or forms — every enquiry path is a
   `mailto:hello@decouvertes.in` link with a pre-filled subject tag. `contact.html`
   embeds a Google Maps iframe by address — adjust the `q=` value to update it.
