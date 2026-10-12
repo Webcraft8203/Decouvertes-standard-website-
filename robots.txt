@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /assets/downloads/
+Allow: /assets/downloads/posters/
 
 Sitemap: https://www.decouvertes.in/sitemap.xml

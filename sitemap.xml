@@ -1,138 +1,269 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://www.decouvertes.in/</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>1.0</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/certificates/dpiit-recognition.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-treeline.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/capabilities/survey-mapping.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/capabilities/industrial-inspection.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-clouds-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/capabilities/gps-denied.png</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/capabilities/dooaf-system.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/capabilities/ai-vision.png</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-nano.png</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-2.png</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-3.png</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-4.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/dropping-system-dark.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/sandesh-device.svg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-clouds-2.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.decouvertes.in/assets/videos/vision-4-product-film-poster.jpg</video:thumbnail_loc>
+      <video:title>Vision 4.0 product film</video:title>
+      <video:description>A one-minute film of the Decouvertes Vision 4.0 X8 coaxial multirotor: the platform, its headline figures and what it is used for.</video:description>
+      <video:content_loc>https://www.decouvertes.in/assets/videos/vision-4-product-film.mp4</video:content_loc>
+      <video:duration>60</video:duration>
+      <video:publication_date>2026-10-07T00:00:00+05:30</video:publication_date>
+    </video:video>
   </url>
   <url>
     <loc>https://www.decouvertes.in/about.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/careers/team-photo.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/hero/hero-briefing.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/certificates/dpiit-recognition.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/team/omprakash-soni.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/team/shivam-soni.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/team/natasha-soni.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/airframe-bay.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/products/</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.9</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/airframe-bay.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-nano.png</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-4.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-2.png</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-3.png</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/dropping-system.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/sandesh-device.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/products/vision-1.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/airframe-driveway.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-1.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/products/vision-2.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/airframe-bay.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-2.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/products/vision-3.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-3-flight.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-3-flight-clouds.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-3-flight-valley.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-3-view-front.png</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-3-view-plan.png</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-3-view-top.png</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.decouvertes.in/assets/videos/vision-3-coming-soon-poster.jpg</video:thumbnail_loc>
+      <video:title>Vision 3.0 teaser film</video:title>
+      <video:description>A 20-second teaser of the Decouvertes Vision 3.0 fixed-wing VTOL UAV, showing the airframe and its headline figures.</video:description>
+      <video:content_loc>https://www.decouvertes.in/assets/videos/vision-3-coming-soon.mp4</video:content_loc>
+      <video:duration>20</video:duration>
+      <video:publication_date>2026-10-10T00:00:00+05:30</video:publication_date>
+    </video:video>
   </url>
   <url>
     <loc>https://www.decouvertes.in/products/vision-4.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/ground-setup-3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-4.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-4-photo-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-4-photo-2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-4-photo-3.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.decouvertes.in/assets/videos/vision-4-product-film-poster.jpg</video:thumbnail_loc>
+      <video:title>Vision 4.0 product film</video:title>
+      <video:description>A one-minute film of the Decouvertes Vision 4.0 X8 coaxial multirotor: the platform, its headline figures and what it is used for.</video:description>
+      <video:content_loc>https://www.decouvertes.in/assets/videos/vision-4-product-film.mp4</video:content_loc>
+      <video:duration>60</video:duration>
+      <video:publication_date>2026-10-07T00:00:00+05:30</video:publication_date>
+    </video:video>
   </url>
   <url>
     <loc>https://www.decouvertes.in/products/vision-nano.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-sky-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-nano.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/products/sandesh-device.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/ground-setup-2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/sandesh-device.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/products/payload-delivery-system.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/dropping-system-dark.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/dropping-system.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/solutions.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.9</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/airframe-bay.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-sky-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/field-wide.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-treeline.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-clouds-2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-sky-2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/capabilities/dooaf-system.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/ground-setup-3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/capabilities/swarm-drones.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/capabilities/tethered-drones.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/hero/hero-briefing.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/capabilities/diy-kit.png</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/ground-setup-1.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/software/</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/vision-desk.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/software/gcs.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/vision-desk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/ground-setup-1.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/software/ai-vision-app.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-treeline.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-sky-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-clouds-2.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/software/t12-drone-app.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/ground-setup-3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/airframe-driveway.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/software/sandesh-app.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/hero/hero-briefing.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/vehicle-transport.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/careers/</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/careers/team-photo.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/careers/drone-integration-engineer.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/transit-case.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/airframe-bay.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/ground-setup-1.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/careers/ai-developer.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-treeline.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-sky-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-clouds-2.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/careers/embedded-developer.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/vision-desk.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/careers/business-developer.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/hero/hero-briefing.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/facility-walkthrough.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/careers/drone-engineer.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/airframe-driveway.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/airframe-bay.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/ground-setup-1.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/gallery.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.5</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/hero/hero-field.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/hero/hero-briefing.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-clouds-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/airframe-bay.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/vision-desk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/airframe-driveway.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/ground-setup-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/facility-walkthrough.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-clouds-2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/field-wide.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/ground-setup-3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/transit-case.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-treeline.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/vehicle-transport.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-sky-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-sky-2.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/contact.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/facility-walkthrough.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/legal/privacy.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>https://www.decouvertes.in/legal/terms.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>https://www.decouvertes.in/legal/disclaimer.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.2</priority>
   </url>
 </urlset>
