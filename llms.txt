@@ -1,0 +1,28 @@
+# Decouvertes Future Tech
+
+> Decouvertes Future Tech Private Limited is an Indian drone manufacturer and defence-technology company in Pune, Maharashtra, founded in 2023 and recognised by DPIIT (Startup India). It designs, builds and tests indigenous UAVs, ground-control software and field communication devices for defence, government, surveillance, mapping and industrial inspection.
+
+## Drones
+- [Vision Nano](https://www.decouvertes.in/products/vision-nano.html): 250 g nano surveillance drone, 20 MP camera, 5 km range, 25 min flight time
+- [Vision 1.0](https://www.decouvertes.in/products/vision-1.html): 1.8 kg carbon-fibre training quadcopter
+- [Vision 2.0](https://www.decouvertes.in/products/vision-2.html): foldable surveillance quadcopter with PTZ camera, GPS-denied navigation and AI autonomy, 25 km range
+- [Vision 3.0](https://www.decouvertes.in/products/vision-3.html): VTOL fixed-wing UAV, 50 km range, 45 min endurance
+- [Vision 4.0](https://www.decouvertes.in/products/vision-4.html): X8 coaxial heavy-payload drone, 5 kg payload, 50 min flight time, 35 km range
+- [All products](https://www.decouvertes.in/products/)
+
+## Capabilities and software
+- [Drone capabilities](https://www.decouvertes.in/solutions.html): surveillance, mapping, inspection, disaster response, GPS-denied navigation, DOAF, AI vision, swarm, tethered and training drones
+- [Software](https://www.decouvertes.in/software/): ground control station and companion apps
+
+## Guides and news
+- [How to choose a surveillance drone](https://www.decouvertes.in/how-to-choose-a-surveillance-drone.html)
+- [VTOL fixed-wing vs multirotor drones](https://www.decouvertes.in/vtol-vs-multirotor-drones.html)
+- [GPS-denied drone navigation](https://www.decouvertes.in/gps-denied-drone-navigation.html)
+- [Drone survey and mapping guide](https://www.decouvertes.in/drone-survey-and-mapping-guide.html)
+- [Tethered drones explained](https://www.decouvertes.in/tethered-drones-explained.html)
+- [Nano drones explained](https://www.decouvertes.in/nano-drones-explained.html)
+- [Vision Nano on DD News Defence Dynamics](https://www.decouvertes.in/vision-nano-on-dd-news.html)
+
+## Company
+- [About](https://www.decouvertes.in/about.html)
+- [Contact](https://www.decouvertes.in/contact.html): hello@decouvertes.in, +91 95611 03435
