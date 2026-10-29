@@ -15,6 +15,7 @@
 - [Software](https://www.decouvertes.in/software/): ground control station and companion apps
 
 ## Guides and news
+- [Registered OEM on the Government e-Marketplace (GeM)](https://www.decouvertes.in/decouvertes-registered-oem-on-gem.html): Vision series drones available for direct government procurement
 - [How to choose a surveillance drone](https://www.decouvertes.in/how-to-choose-a-surveillance-drone.html)
 - [VTOL fixed-wing vs multirotor drones](https://www.decouvertes.in/vtol-vs-multirotor-drones.html)
 - [GPS-denied drone navigation](https://www.decouvertes.in/gps-denied-drone-navigation.html)

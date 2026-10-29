@@ -313,4 +313,10 @@
     <priority>0.7</priority>
     <image:image><image:loc>https://www.decouvertes.in/assets/img/news/dd-news-vision-nano.jpg</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://www.decouvertes.in/decouvertes-registered-oem-on-gem.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/news/gem-registered-oem.jpg</image:loc></image:image>
+  </url>
 </urlset>
