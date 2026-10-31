@@ -11,6 +11,7 @@
 - [All products](https://www.decouvertes.in/products/)
 
 ## Capabilities and software
+- [Custom UAV development and drone manufacturing](https://www.decouvertes.in/custom-uav-development.html): custom UAV design, airframes, flight control, payload, navigation and communication integration
 - [Drone capabilities](https://www.decouvertes.in/solutions.html): surveillance, mapping, inspection, disaster response, GPS-denied navigation, DOAF, AI vision, swarm, tethered and training drones
 - [Software](https://www.decouvertes.in/software/): ground control station and companion apps
 

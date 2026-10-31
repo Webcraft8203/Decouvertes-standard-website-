@@ -95,7 +95,8 @@ GitHub Pages, S3, nginx…) — the URL structure matches the folder structure
   plays from a hosted `https://` site (opened from disk it shows Error 153).
 - **Social links:** the footer icons (YouTube, LinkedIn, Instagram) link to the
   company profiles — the same three links are repeated in every page footer.
-- **Contact:** the site has no backend or forms — every enquiry path is a
+- **Contact:** the site has no backend — every enquiry path, including the form on
+  `custom-uav-development.html`, composes a
   `mailto:hello@decouvertes.in` link with a pre-filled subject tag. `contact.html`
   embeds a Google Maps iframe by address — adjust the `q=` value to update it.
 - **Legal pages:** the India-specific templates in `legal/` need review by

@@ -151,6 +151,23 @@
     hReset();
   }
 
+  /* ---------- Enquiry forms: no backend, so compose an email from the fields ---------- */
+  document.querySelectorAll("[data-mailto-form]").forEach(function (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var lines = [];
+      [].forEach.call(form.elements, function (el) {
+        if (el.name && el.value.trim()) lines.push(el.name + ": " + el.value.trim());
+      });
+      var to = form.getAttribute("data-mailto");
+      window.location.href = "mailto:" + to +
+        "?subject=" + encodeURIComponent(form.getAttribute("data-subject")) +
+        "&body=" + encodeURIComponent(lines.join("\n\n"));
+      var note = form.querySelector("[data-form-note]");
+      if (note) note.textContent = "Your email app should now be open with your details filled in. Press send to reach us. If nothing opened, write to " + to + ".";
+    });
+  });
+
   /* ---------- Capabilities carousel ---------- */
   var caps = document.querySelector(".caps");
   var prev = document.querySelector("[data-caps-prev]");

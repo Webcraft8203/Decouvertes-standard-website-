@@ -449,6 +449,7 @@ a.hero__caption:hover{ color:var(--amber); }
 
 /* simple spec figures (light) */
 .specs{ display:grid; grid-template-columns:repeat(6,1fr); gap:22px; }
+.specs--4{ grid-template-columns:repeat(4,1fr); }
 .specs > div{ border-left:2px solid var(--line); padding-left:16px; }
 .specs__v{ font-family:var(--font-head); font-size:clamp(1.4rem,2.6vw,1.9rem); font-weight:700; color:var(--ink); letter-spacing:-.02em; line-height:1.1; }
 .specs__v span{ font-size:.58em; color:var(--brand); font-weight:600; margin-left:3px; }
@@ -617,6 +618,7 @@ a.hero__caption:hover{ color:var(--amber); }
 
 /* posts (blog listing) */
 .posts{ display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+.posts--4{ grid-template-columns:repeat(4,1fr); }
 .post-card{ display:flex; flex-direction:column; transition:transform .3s var(--ease); }
 .post-card:hover{ transform:translateY(-6px); }
 .post-card:hover h3{ color:var(--brand); }
@@ -655,8 +657,8 @@ a.hero__caption:hover{ color:var(--amber); }
 .form-row{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
 .field{ margin-bottom:18px; }
 .field label{ display:block; font-weight:500; font-size:.85rem; margin-bottom:8px; color:var(--ink); }
-.field input,.field textarea{ width:100%; padding:14px 16px; border:1px solid var(--line); border-radius:var(--r-btn); background:var(--band-soft); font:inherit; color:var(--ink-soft); transition:.2s var(--ease); }
-.field input:focus,.field textarea:focus{ outline:none; border-color:var(--brand); background:#fff; }
+.field input,.field textarea,.field select{ width:100%; padding:14px 16px; border:1px solid var(--line); border-radius:var(--r-btn); background:var(--band-soft); font:inherit; color:var(--ink-soft); transition:.2s var(--ease); }
+.field input:focus,.field textarea:focus,.field select:focus{ outline:none; border-color:var(--brand); background:#fff; }
 .field textarea{ min-height:140px; resize:vertical; }
 .map-wrap{ margin-top:52px; border-radius:var(--r-img); overflow:hidden; border:1px solid var(--line); aspect-ratio:16/6; background:var(--band-soft); }
 .map-wrap iframe{ width:100%; height:100%; border:0; }
@@ -1135,3 +1137,32 @@ a.hero__caption:hover{ color:var(--amber); }
 @media (min-width:4480px) and (min-height:2350px){ html{ zoom:2.5; } }
 @media (min-width:5120px) and (min-height:2700px){ html{ zoom:2.85; } }
 @media (min-width:6000px) and (min-height:3100px){ html{ zoom:3.3; } }
+
+/* =============================================================
+   CUSTOM UAV DEVELOPMENT
+   ============================================================= */
+.custom-hero__actions{ justify-content:flex-start; margin-top:24px; }
+.inline-link{ color:var(--brand); }
+.inline-link:hover{ text-decoration:underline; }
+.steps--6{ grid-template-columns:repeat(6,1fr); margin:0; padding:0; list-style:none; }
+.custom-enquiry{ align-items:start; }
+.custom-enquiry h2{ font-size:clamp(1.85rem,3.6vw,2.8rem); margin-bottom:16px; }
+.custom-enquiry__lede{ color:var(--muted); margin-bottom:24px; }
+.custom-enquiry .contact-card{ background:#fff; }
+.form-submit{ width:100%; justify-content:center; }
+.form-note{ margin-top:14px; font-size:.82rem; color:var(--muted); }
+@media (max-width:1200px){
+  .steps--6{ grid-template-columns:repeat(3,1fr); }
+  .steps--6 .step{ border-left:1px solid var(--line); border-top:1px solid var(--line); }
+  .steps--6 .step:nth-child(3n+1){ border-left:0; }
+  .steps--6 .step:nth-child(-n+3){ border-top:0; }
+}
+@media (max-width:760px){
+  .steps--6{ grid-template-columns:1fr; grid-auto-flow:row; grid-auto-columns:auto; overflow:visible; margin-inline:0; padding:0; border:1px solid var(--line); border-radius:var(--r-card); background:#fff; }
+  .steps--6 .step{ border:0; border-radius:0; background:none; border-top:1px solid var(--line); }
+  .steps--6 .step:nth-child(3n+1){ border-left:0; }
+  .steps--6 .step:nth-child(-n+3){ border-top:1px solid var(--line); }
+  .steps--6 .step:first-child{ border-top:0; }
+}
+.anim-media{ display:contents; }
+.bt__img .anim-media img{ object-position:center bottom; }
