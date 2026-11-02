@@ -140,8 +140,8 @@
     <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/flight-sky-2.webp</image:loc></image:image>
     <image:image><image:loc>https://www.decouvertes.in/assets/img/capabilities/dooaf-system.webp</image:loc></image:image>
     <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/ground-setup-3.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.decouvertes.in/assets/img/capabilities/swarm-drones.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.decouvertes.in/assets/img/capabilities/tethered-drones.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/capabilities/swarm-vision-nano-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-4-photo-1.webp</image:loc></image:image>
     <image:image><image:loc>https://www.decouvertes.in/assets/img/hero/hero-briefing.webp</image:loc></image:image>
     <image:image><image:loc>https://www.decouvertes.in/assets/img/capabilities/diy-kit.webp</image:loc></image:image>
     <image:image><image:loc>https://www.decouvertes.in/assets/img/gallery/ground-setup-1.webp</image:loc></image:image>
@@ -305,7 +305,7 @@
     <loc>https://www.decouvertes.in/tethered-drones-explained.html</loc>
     <lastmod>2026-10-29</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://www.decouvertes.in/assets/img/capabilities/tethered-drones.png</image:loc></image:image>
+    <image:image><image:loc>https://www.decouvertes.in/assets/img/products/vision-4-photo-1.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.decouvertes.in/nano-drones-explained.html</loc>
