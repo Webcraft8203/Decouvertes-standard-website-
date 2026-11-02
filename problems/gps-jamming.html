@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Drone GPS Jamming and Spoofing: How to Keep Flying | Decouvertes</title>
+<!-- SEO -->
+<meta name="description" content="How GPS jamming and spoofing put drone missions at risk, and how GPS-denied navigation keeps a UAV on course without a satellite fix." />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+<link rel="canonical" href="https://www.decouvertes.in/problems/gps-jamming.html" />
+<link rel="alternate" hreflang="en-IN" href="https://www.decouvertes.in/problems/gps-jamming.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.decouvertes.in/problems/gps-jamming.html" />
+<meta name="geo.region" content="IN-MH" />
+<meta name="geo.placename" content="Pune" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Decouvertes Future Tech" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:title" content="Drone GPS Jamming and Spoofing: How to Keep Flying | Decouvertes" />
+<meta property="og:description" content="How GPS jamming and spoofing put drone missions at risk, and how GPS-denied navigation keeps a UAV on course without a satellite fix." />
+<meta property="og:url" content="https://www.decouvertes.in/problems/gps-jamming.html" />
+<meta property="og:image" content="https://www.decouvertes.in/assets/img/gallery/flight-clouds-1.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Drone GPS Jamming and Spoofing: How to Keep Flying | Decouvertes" />
+<meta name="twitter:description" content="How GPS jamming and spoofing put drone missions at risk, and how GPS-denied navigation keeps a UAV on course without a satellite fix." />
+<meta name="twitter:image" content="https://www.decouvertes.in/assets/img/gallery/flight-clouds-1.jpg" />
+<meta name="theme-color" content="#10161a" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.decouvertes.in/"},{"@type":"ListItem","position":2,"name":"Problems We Solve","item":"https://www.decouvertes.in/problems/"},{"@type":"ListItem","position":3,"name":"GPS jamming and spoofing","item":"https://www.decouvertes.in/problems/gps-jamming.html"}]},{"@type":"Article","headline":"When GPS is jammed, the drone must still fly the mission","description":"How GPS jamming and spoofing put drone missions at risk, and how GPS-denied navigation keeps a UAV on course without a satellite fix.","image":["https://www.decouvertes.in/assets/img/gallery/flight-clouds-1.jpg"],"datePublished":"2026-11-02T10:00:00+05:30","dateModified":"2026-11-02T10:00:00+05:30","author":{"@id":"https://www.decouvertes.in/#organization"},"publisher":{"@id":"https://www.decouvertes.in/#organization"},"mainEntityOfPage":"https://www.decouvertes.in/problems/gps-jamming.html"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between GPS jamming and spoofing?","acceptedAnswer":{"@type":"Answer","text":"Jamming blocks the satellite signal, so the drone knows it has no fix. Spoofing sends a false signal, so the drone may believe a wrong position, which can be harder to detect."}},{"@type":"Question","name":"Can a drone fly without GPS?","acceptedAnswer":{"@type":"Answer","text":"Yes, if it has GPS-denied navigation. It estimates its own movement from on-board sensors such as a camera, motion sensors, barometer, optical flow and a rangefinder."}},{"@type":"Question","name":"Which Decouvertes drones support GPS-denied navigation?","acceptedAnswer":{"@type":"Answer","text":"Our Products page lists GPS-denied navigation for Vision 2.0, Vision 3.0 and Vision 4.0."}}]}]}</script>
+<!-- /SEO -->
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/css/styles.css" />
+<!-- Vercel Web Analytics -->
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <div class="site-header__left">
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+      <a class="brand" href="../index.html"><img src="../assets/img/logo.png" alt="Decouvertes — Discovering Future Technologies" /></a>
+    </div>
+    <nav class="topnav" aria-label="Primary">
+      <a href="../about.html">About Us</a>
+      <a href="../products/index.html">Products</a>
+      <a href="../software/index.html">Software</a>
+      <a href="../solutions.html">Our Capabilities</a>
+      <a href="../blog.html">Media</a>
+    </nav>
+  </div>
+</header>
+
+<div class="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Site menu">
+  <div class="drawer__top">
+    <img loading="lazy" decoding="async" src="../assets/img/logo.png" alt="Decouvertes" />
+    <button class="drawer__close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <nav class="drawer__list">
+    <a href="../index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 10.5 12 4l9 6.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
+    <a href="../about.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5"/><path d="M16 5.6a3 3 0 0 1 0 5.8M18.5 20c0-2.4-1-3.9-2.6-4.7"/></svg>About Us</a>
+    <a href="../products/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3 3 7.5 12 12l9-4.5L12 3Z"/><path d="M3 7.5v9L12 21l9-4.5v-9"/><path d="M12 12v9"/></svg>Products</a>
+    <a href="../software/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 16h18M8 20h8"/><path d="m9 9 2 2-2 2M13 13h2"/></svg>Software</a>
+    <a href="../solutions.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Our Capabilities</a>
+    <a href="../custom-uav-development.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 7a4 4 0 0 0 5 5l-8 8a2.8 2.8 0 0 1-4-4z"/><path d="m14 7 3-3 3 3-3 3"/></svg>Custom UAV Development</a>
+    <a href="../problems/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.3M12 17h.01"/></svg>Problems We Solve</a>
+    <a href="../gallery.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.8"/><path d="m4 18 5-5 4 3 3-2 4 4"/></svg>Gallery</a>
+    <a href="../blog.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 3h11l3 3v15H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>Media &amp; Insights</a>
+    <a href="../contact.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L7.6 9.8a16 16 0 0 0 6 6l1.4-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6A2 2 0 0 1 22 16.9z"/></svg>Contact Us</a>
+  </nav>
+  <div class="drawer__cta"><a class="btn btn--solid" href="../contact.html">Get a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+</aside>
+
+<main>
+
+<section class="page-hero">
+  <div class="page-hero__media"><img fetchpriority="high" decoding="async" data-fallback src="../assets/img/gallery/flight-clouds-1.jpg" alt="" /></div>
+  <div class="container page-hero__inner">
+    <p class="crumbs"><a href="../index.html">Home</a> / <a href="../problems/index.html">Problems We Solve</a> / <b>GPS jamming and spoofing</b></p>
+    <span class="product-badge">Defence</span>
+    <h1 style="margin-top:14px">When GPS is jammed, the drone must still fly the mission</h1>
+    <p>Satellite signals are easy to jam, spoof or block, and a drone that depends on them can drift or be lost.</p>
+  </div>
+  <span class="side-tab"><span>The Problem</span></span>
+  <span class="page-hero__strip"></span>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal"><div><span class="eyebrow">The Problem</span><h2>Why do drones lose GPS, and what happens next?</h2><p>Most drones trust satellite navigation completely. In a contested area, or simply in a deep valley, that signal can disappear or lie. The aircraft then loses its position just when the team needs it most.</p></div></div>
+    <div class="scene">
+      <figure class="scene__panel scene__panel--bad reveal"><figcaption><strong>The problem</strong>A jammer blocks the signal, so the drone drifts off its route.</figcaption><svg viewBox="0 0 360 240" role="img" aria-label="A jammer blocks the signal, so the drone drifts off its route." xmlns="http://www.w3.org/2000/svg"><g fill="#d93636" stroke="#d93636" stroke-linecap="round"><rect x="223" y="56" width="24" height="12" rx="4" stroke="none"/><path d="M209 59H223M247 59H261" stroke-width="3" fill="none"/><path d="M198 53H220M250 53H272" stroke-width="2.5" fill="none"/><path d="M209 53v6M261 53v6" stroke-width="2.5" fill="none"/><path d="M227 68l-4 9M243 68l4 9" stroke-width="2.5" fill="none"/></g><path d="M60 40C100 44 120 70 150 56S190 40 196 60" fill="none" stroke="#d93636" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 6"/><line x1="50" y1="42" x2="150" y2="110" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 6"/><circle cx="42" cy="36" r="13" fill="#7b848a"/><path d="M22 36h40" fill="none" stroke="#7b848a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="112" cy="84" r="14" fill="#fff" stroke="#d93636" stroke-width="2.5"/><path d="M106.5 78.5l11 11M117.5 78.5l-11 11" fill="none" stroke="#d93636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M56 205L72 145L88 205M63 184.0H81M67 164.2H77" fill="none" stroke="#d93636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M60 146a12 12 0 0 1 24 0" fill="none" stroke="#d93636" stroke-width="2.5" stroke-linecap="round"/><path d="M48 146a24 24 0 0 1 48 0" fill="none" stroke="#d93636" stroke-width="2.5" stroke-linecap="round"/><path d="M36 146a36 36 0 0 1 72 0" fill="none" stroke="#d93636" stroke-width="2.5" stroke-linecap="round"/><line x1="14" y1="205" x2="346" y2="205" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round"/><rect x="186.6" y="144" width="116.8" height="24" rx="12" fill="#d93636"/><text x="245" y="161" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Position lost</text></svg></figure>
+      <figure class="scene__panel scene__panel--good reveal d1"><figcaption><strong>The solution</strong>On-board sensors take over and keep the aircraft on course.</figcaption><svg viewBox="0 0 360 240" role="img" aria-label="On-board sensors take over and keep the aircraft on course." xmlns="http://www.w3.org/2000/svg"><g fill="#131619" stroke="#131619" stroke-linecap="round"><rect x="243" y="60" width="24" height="12" rx="4" stroke="none"/><path d="M229 63H243M267 63H281" stroke-width="3" fill="none"/><path d="M218 57H240M270 57H292" stroke-width="2.5" fill="none"/><path d="M229 57v6M281 57v6" stroke-width="2.5" fill="none"/><path d="M247 72l-4 9M263 72l4 9" stroke-width="2.5" fill="none"/></g><path d="M50 88H200" fill="none" stroke="#1f9d63" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M192 80l9 8l-9 8" fill="none" stroke="#1f9d63" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="38.2" y="134" width="63.599999999999994" height="24" rx="12" fill="#131619"/><text x="70" y="151" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Camera</text><rect x="117.80000000000001" y="134" width="124.39999999999999" height="24" rx="12" fill="#131619"/><text x="180" y="151" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Motion sensors</text><rect x="270.0" y="134" width="56.0" height="24" rx="12" fill="#131619"/><text x="298" y="151" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Range</text><line x1="70" y1="134" x2="235" y2="78" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/><line x1="180" y1="134" x2="248" y2="78" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/><line x1="298" y1="134" x2="262" y2="78" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/><line x1="14" y1="205" x2="346" y2="205" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round"/><circle cx="308" cy="44" r="14" fill="#1f9d63"/><path d="M302.5 44l4.583333333333334 4.583333333333334l7.699999999999999 -7.699999999999999" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></figure>
+    </div>
+    <div class="problem-explain reveal">
+      <p>GPS and other satellite signals are very weak by the time they reach the ground. A small transmitter can drown them out, and a false signal can convince a drone that it is somewhere else. Terrain and buildings can cause similar trouble with no adversary at all.</p>
+      <p>What happens next depends on the aircraft. Many drones hover, drift, land or try to fly home using bad data. For surveillance or defence work, that can end the mission or lose the aircraft.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="problem-two">
+      <div class="problem-list problem-list--signs reveal">
+        <span class="eyebrow">Identify It</span>
+        <h2>Signs you have this problem</h2>
+        <ul>
+        <li>Your drone drifts or shows position warnings in certain areas</li>
+        <li>Flights fail or end early near borders or sensitive sites</li>
+        <li>The drone behaves unpredictably in valleys or dense urban areas</li>
+        <li>Your mission plan has no answer for what happens if GPS is lost</li>
+        </ul>
+      </div>
+      <div class="problem-list problem-list--look reveal d1">
+        <span class="eyebrow">Choose A Solution</span>
+        <h2>What to look for</h2>
+        <ul>
+        <li>Automatic fallback when satellite data is degraded or spoofed</li>
+        <li>Visual-inertial odometry for position hold and route following</li>
+        <li>Sensor fusion across several independent sensors</li>
+        <li>Return-to-home that does not need a satellite lock</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal"><div><span class="eyebrow">Why It Happens</span><h2>The main causes</h2></div></div>
+    <div class="tiles">
+      <div class="tile reveal"><div class="tile__no">01</div><h3>Jamming</h3><p>A nearby transmitter drowns out the weak satellite signal, so the drone has no position fix.</p></div>
+      <div class="tile reveal"><div class="tile__no">02</div><h3>Spoofing</h3><p>A false signal tells the drone it is somewhere else, and it flies the wrong way with full confidence.</p></div>
+      <div class="tile reveal"><div class="tile__no">03</div><h3>Blockage</h3><p>Valleys, forests and buildings block or reflect the signal, even with no adversary around.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head reveal"><div><span class="eyebrow">Side By Side</span><h2>Before and after</h2></div></div>
+    <div class="compare">
+      <div class="compare-row reveal"><div class="compare-row__k">When GPS drops</div><div class="compare-row__bad"><span>Without</span>Drifts, lands or is lost</div><div class="compare-row__good"><span>With Decouvertes</span>Automatic fallback to on-board navigation</div></div>
+      <div class="compare-row reveal"><div class="compare-row__k">False signals</div><div class="compare-row__bad"><span>Without</span>Followed without question</div><div class="compare-row__good"><span>With Decouvertes</span>Detected as degraded or spoofed GNSS</div></div>
+      <div class="compare-row reveal"><div class="compare-row__k">Holding position</div><div class="compare-row__bad"><span>Without</span>Needs a satellite fix</div><div class="compare-row__good"><span>With Decouvertes</span>Visual-inertial odometry holds position</div></div>
+      <div class="compare-row reveal"><div class="compare-row__k">Coming home</div><div class="compare-row__bad"><span>Without</span>Waits for GPS to return</div><div class="compare-row__good"><span>With Decouvertes</span>Return-to-home without a satellite lock</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal"><div><span class="eyebrow">Implement It</span><h2>How to solve it, step by step</h2></div></div>
+    <ol class="flow">
+      <li class="flow__step reveal"><span class="flow__no">1</span><h3>Sense</h3><p>Camera, motion, barometer, optical-flow and range sensors run all the time.</p></li>
+      <li class="flow__step reveal"><span class="flow__no">2</span><h3>Fuse</h3><p>Readings are blended so no single sensor can mislead the aircraft.</p></li>
+      <li class="flow__step reveal"><span class="flow__no">3</span><h3>Switch</h3><p>When GNSS is degraded or spoofed, the on-board estimate takes over.</p></li>
+      <li class="flow__step reveal"><span class="flow__no">4</span><h3>Finish</h3><p>The drone completes its route or returns home without a satellite lock.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head reveal"><div><span class="eyebrow">Recommended</span><h2>What to use</h2></div></div>
+    <div class="tiles">
+      <a class="tile reveal" href="../products/vision-2.html"><h3>Vision 2.0</h3><p>Foldable surveillance quadcopter built for contested areas.</p><span class="tlink">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="tile reveal" href="../solutions.html#gps-denied"><h3>GPS-denied capability</h3><p>The navigation features in detail.</p><span class="tlink">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="tile reveal" href="../gps-denied-drone-navigation.html"><h3>Explainer</h3><p>What GPS-denied navigation is and what to ask a supplier.</p><span class="tlink">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <div class="faq-layout">
+      <div class="faq-intro reveal"><span class="eyebrow">Questions</span><h2>Common questions</h2></div>
+      <div class="faq reveal">
+      <details><summary>What is the difference between GPS jamming and spoofing?</summary><p>Jamming blocks the satellite signal, so the drone knows it has no fix. Spoofing sends a false signal, so the drone may believe a wrong position, which can be harder to detect.</p></details>
+      <details><summary>Can a drone fly without GPS?</summary><p>Yes, if it has GPS-denied navigation. It estimates its own movement from on-board sensors such as a camera, motion sensors, barometer, optical flow and a rangefinder.</p></details>
+      <details><summary>Which Decouvertes drones support GPS-denied navigation?</summary><p>Our Products page lists GPS-denied navigation for Vision 2.0, Vision 3.0 and Vision 4.0.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <div class="section-head reveal"><div><span class="eyebrow">Keep Reading</span><h2>Related problems</h2></div></div>
+    <div class="tiles">
+      <a class="tile reveal" href="../problems/wide-area-surveillance.html"><div class="problem-card__tag">Security</div><h3>Too much ground, too few eyes</h3><p>Borders, pipelines and large sites are too long to cover on foot or from fixed posts alone.</p><span class="tlink">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="tile reveal" href="../problems/artillery-fire-correction.html"><div class="problem-card__tag">Defence</div><h3>Correcting artillery fire safely</h3><p>Seeing where rounds land usually means putting a person at risk, and passing corrections back takes time.</p><span class="tlink">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="tile reveal" href="../problems/drone-battery-limits.html"><div class="problem-card__tag">Security</div><h3>Battery limits on overwatch</h3><p>Every free-flying drone must come down to recharge, which leaves a gap in what you can see.</p><span class="tlink">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+    <p class="problem-next"><a class="tlink" href="../problems/index.html">&larr; All problems</a><a class="tlink" href="../problems/wide-area-surveillance.html">Next: Too much ground, too few eyes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
+
+<section class="cta" style="background-image:url('../assets/img/gallery/field-wide.jpg')">
+  <div class="cta__bg"></div>
+  <div class="container cta__inner reveal">
+    <span class="eyebrow" style="justify-content:center;color:var(--amber)">Your Mission</span>
+    <h2>Facing this problem?</h2>
+    <p>Tell us about your mission and our engineers will suggest the right platform or configuration.</p>
+    <div class="cta__actions">
+      <a class="btn btn--solid" href="../contact.html">Talk to Our Team <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--ghost-light" href="../custom-uav-development.html">Custom UAV Development</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../blog.html">Media &amp; Insights</a></li>
+          <li><a href="../about.html#milestones">Milestones</a></li>
+          <li><a href="../careers/index.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Our Capabilities</h4>
+        <ul>
+          <li><a href="../solutions.html#surveillance">Surveillance &amp; Security</a></li>
+          <li><a href="../solutions.html#mapping">Survey &amp; Mapping</a></li>
+          <li><a href="../solutions.html#inspection">Industrial Inspection</a></li>
+          <li><a href="../solutions.html#disaster">Disaster Response</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Enquiries</h4>
+        <ul>
+          <li><a href="../custom-uav-development.html">Custom UAV Development</a></li>
+          <li><a href="../problems/index.html">Problems We Solve</a></li>
+          <li><a href="../contact.html">Contact Us</a></li>
+          <li><a href="../contact.html">Request a Quote</a></li>
+          <li><a href="../contact.html">Partnerships</a></li>
+          <li><a href="mailto:hello@decouvertes.in">hello@decouvertes.in</a></li>
+          <li><a href="tel:+919561103435">+91 95611 03435</a></li>
+        </ul>
+      </div>
+      <div class="footer__col footer__brand">
+        <img loading="lazy" decoding="async" src="../assets/img/logo.png" alt="Decouvertes" />
+        <p>Indigenous drone platforms for surveillance, industrial and mission-critical operations — engineered in Pune, India.</p>
+      </div>
+    </div>
+    <div class="footer__connect">
+      <strong>Stay Connected</strong>
+      <div class="social">
+        <a href="https://www.youtube.com/@the_art_of_india" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.3-.4-4.8a3 3 0 0 0-2.1-2.1C18.9 4.6 12 4.6 12 4.6s-6.9 0-8.5.5A3 3 0 0 0 1.4 7.2C1 8.7 1 12 1 12s0 3.3.4 4.8a3 3 0 0 0 2.1 2.1c1.6.5 8.5.5 8.5.5s6.9 0 8.5-.5a3 3 0 0 0 2.1-2.1C23 15.3 23 12 23 12zM9.8 15.3V8.7l5.7 3.3z"/></svg></a>
+        <a href="https://www.linkedin.com/company/decouvertes-future-tech-private-limited/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1a4.2 4.2 0 0 1 3.8-2.1c4 0 4.8 2.6 4.8 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg></a>
+        <a href="https://www.instagram.com/decouvertes_future_tech" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> Decouvertes Future Tech Private Limited</span>
+      <a href="../legal/privacy.html">Privacy Notice</a>
+      <a href="../legal/terms.html">Terms &amp; Conditions</a>
+      <a href="../legal/disclaimer.html">Disclaimer</a>
+      <span class="made">Made in <b>India</b></span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

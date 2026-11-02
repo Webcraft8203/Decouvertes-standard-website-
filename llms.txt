@@ -15,6 +15,30 @@
 - [Drone capabilities](https://www.decouvertes.in/solutions.html): surveillance, mapping, inspection, disaster response, GPS-denied navigation, DOAF, AI vision, swarm, tethered and training drones
 - [Software](https://www.decouvertes.in/software/): ground control station and companion apps
 
+## Problems we solve
+- [All problems](https://www.decouvertes.in/problems/)
+- [GPS jamming and spoofing](https://www.decouvertes.in/problems/gps-jamming.html)
+- [Too much ground, too few eyes](https://www.decouvertes.in/problems/wide-area-surveillance.html)
+- [Correcting artillery fire safely](https://www.decouvertes.in/problems/artillery-fire-correction.html)
+- [Slow land surveys](https://www.decouvertes.in/problems/slow-land-surveys.html)
+- [Risky, slow inspections](https://www.decouvertes.in/problems/risky-infrastructure-inspection.html)
+- [Blind in the first hours of a disaster](https://www.decouvertes.in/problems/disaster-response.html)
+- [No network in the field](https://www.decouvertes.in/problems/no-network-communication.html)
+- [Battery limits on overwatch](https://www.decouvertes.in/problems/drone-battery-limits.html)
+- [Too much drone video to watch](https://www.decouvertes.in/problems/video-overload.html)
+- [Costly crashes while learning](https://www.decouvertes.in/problems/drone-pilot-training.html)
+- [Relying on imported drones](https://www.decouvertes.in/problems/imported-drone-dependence.html)
+- [Drone can’t carry your sensor](https://www.decouvertes.in/problems/heavy-payload-drone.html)
+- [Finding missing people](https://www.decouvertes.in/problems/search-for-missing-persons.html)
+- [Monitoring large crowds](https://www.decouvertes.in/problems/crowd-monitoring.html)
+- [Hidden faults in solar plants](https://www.decouvertes.in/problems/solar-plant-inspection.html)
+- [Long power lines to inspect](https://www.decouvertes.in/problems/power-line-inspection.html)
+- [One drone isn’t enough](https://www.decouvertes.in/problems/large-area-search-swarm.html)
+- [Worried about drone data security](https://www.decouvertes.in/problems/drone-data-security.html)
+- [Drone too bulky to carry](https://www.decouvertes.in/problems/portable-drone-for-small-teams.html)
+- [No standard drone fits your mission](https://www.decouvertes.in/problems/no-standard-drone-fits.html)
+- [Buying drones for government](https://www.decouvertes.in/problems/government-drone-procurement.html)
+
 ## Guides and news
 - [Registered OEM on the Government e-Marketplace (GeM)](https://www.decouvertes.in/decouvertes-registered-oem-on-gem.html): Vision series drones available for direct government procurement
 - [How to choose a surveillance drone](https://www.decouvertes.in/how-to-choose-a-surveillance-drone.html)
