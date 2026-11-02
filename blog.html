@@ -30,9 +30,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="preload" href="assets/fonts/roboto-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="assets/css/styles.css" />
 <!-- Vercel Web Analytics -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
@@ -44,7 +42,7 @@
   <div class="site-header__inner">
     <div class="site-header__left">
       <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-      <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="Decouvertes — Discovering Future Technologies" /></a>
+      <a class="brand" href="index.html"><img src="assets/img/logo.webp" alt="Decouvertes — Discovering Future Technologies" /></a>
     </div>
     <nav class="topnav" aria-label="Primary">
       <a href="about.html">About Us</a>
@@ -59,7 +57,7 @@
 <div class="scrim"></div>
 <aside class="drawer" id="drawer" aria-label="Site menu">
   <div class="drawer__top">
-    <img loading="lazy" decoding="async" src="assets/img/logo.png" alt="Decouvertes" />
+    <img loading="lazy" decoding="async" src="assets/img/logo.webp" alt="Decouvertes" />
     <button class="drawer__close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   </div>
   <nav class="drawer__list">
@@ -80,7 +78,7 @@
 <main>
 
 <section class="page-hero">
-  <div class="page-hero__media"><img fetchpriority="high" decoding="async" data-fallback src="assets/img/hero/hero-hangar.jpg" alt="" /></div>
+  <div class="page-hero__media"><img fetchpriority="high" decoding="async" data-fallback src="assets/img/hero/hero-hangar-bg.webp" alt="" /></div>
   <div class="container page-hero__inner">
     <p class="crumbs"><a href="index.html">Home</a> / <b>Media &amp; Insights</b></p>
     <h1>News &amp; Insights</h1>
@@ -93,7 +91,7 @@
 <section class="section">
   <div class="container">
     <article class="featured reveal">
-      <a class="featured__media" href="decouvertes-registered-oem-on-gem.html"><img loading="lazy" decoding="async" data-fallback src="assets/img/news/gem-registered-oem.jpg" alt="Decouvertes, Registered OEM on GeM" /></a>
+      <a class="featured__media" href="decouvertes-registered-oem-on-gem.html"><img loading="lazy" decoding="async" data-fallback src="assets/img/news/gem-registered-oem.webp" alt="Decouvertes, Registered OEM on GeM" /></a>
       <div>
         <span class="featured__tag">Corporate Update &middot; <time datetime="2026-10-29">29 October 2026</time></span>
         <h2><a href="decouvertes-registered-oem-on-gem.html">Decouvertes is now a Registered OEM on the Government e-Marketplace (GeM)</a></h2>
@@ -102,7 +100,7 @@
       </div>
     </article>
     <article class="featured reveal">
-      <a class="featured__media" href="vision-nano-on-dd-news.html"><img loading="lazy" decoding="async" data-fallback src="assets/img/news/dd-news-vision-nano.jpg" alt="Vision Nano UAV on DD News Defence Dynamics" /></a>
+      <a class="featured__media" href="vision-nano-on-dd-news.html"><img loading="lazy" decoding="async" data-fallback src="assets/img/news/dd-news-vision-nano.webp" alt="Vision Nano UAV on DD News Defence Dynamics" /></a>
       <div>
         <span class="featured__tag">In the News &middot; <time datetime="2026-10-29">29 October 2026</time></span>
         <h2><a href="vision-nano-on-dd-news.html">Vision Nano featured on DD News&rsquo; Defence Dynamics</a></h2>
@@ -113,21 +111,21 @@
     <div class="section-head posts-head"><div><span class="eyebrow">Guides</span><h2>Guides &amp; explainers</h2></div></div>
     <div class="posts">
       <a class="post-card reveal" href="vtol-vs-multirotor-drones.html">
-        <div class="post-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/products/vision-3-flight.jpg" alt="VTOL fixed-wing UAV in flight" /><span class="post-card__pill">Guide</span></div>
+        <div class="post-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/products/vision-3-flight.webp" alt="VTOL fixed-wing UAV in flight" /><span class="post-card__pill">Guide</span></div>
         <div class="post-card__meta"><time datetime="2026-10-29">29 October 2026</time></div>
         <h3>VTOL fixed-wing vs multirotor drones: which suits your mission?</h3>
         <p>How the two drone types differ in range, endurance, payload and deployment.</p>
         <span class="tlink">Read the guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
       <a class="post-card reveal" href="how-to-choose-a-surveillance-drone.html">
-        <div class="post-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/hero/hero-briefing.jpg" alt="Surveillance drone briefing in the field" /><span class="post-card__pill">Guide</span></div>
+        <div class="post-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/hero/hero-briefing.webp" alt="Surveillance drone briefing in the field" /><span class="post-card__pill">Guide</span></div>
         <div class="post-card__meta"><time datetime="2026-10-29">29 October 2026</time></div>
         <h3>How to choose a surveillance drone for defence and security</h3>
         <p>Seven questions to ask before you pick a platform.</p>
         <span class="tlink">Read the guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
       <a class="post-card reveal" href="gps-denied-drone-navigation.html">
-        <div class="post-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/capabilities/gps-denied.png" alt="GPS-denied drone navigation" /><span class="post-card__pill">Explainer</span></div>
+        <div class="post-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/capabilities/gps-denied.webp" alt="GPS-denied drone navigation" /><span class="post-card__pill">Explainer</span></div>
         <div class="post-card__meta"><time datetime="2026-10-29">29 October 2026</time></div>
         <h3>What is GPS-denied navigation, and why do defence drones need it?</h3>
         <p>Why GPS jamming and spoofing are a risk for drones, how GPS-denied navigation keeps a UAV on course, and what to ask a supplier before you buy.</p>
@@ -148,7 +146,7 @@
         <span class="tlink">Read the explainer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
       <a class="post-card reveal" href="nano-drones-explained.html">
-        <div class="post-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/news/dd-news-vision-nano.jpg" alt="Vision Nano on DD News" /><span class="post-card__pill">Explainer</span></div>
+        <div class="post-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/news/dd-news-vision-nano.webp" alt="Vision Nano on DD News" /><span class="post-card__pill">Explainer</span></div>
         <div class="post-card__meta"><time datetime="2026-10-29">29 October 2026</time></div>
         <h3>Nano drones: what a 250-gram drone can do for defence and security</h3>
         <p>What nano drones are, how small teams use them for close-range reconnaissance, their limits, and what to look for when choosing one in India.</p>
@@ -194,7 +192,7 @@
         </ul>
       </div>
       <div class="footer__col footer__brand">
-        <img loading="lazy" decoding="async" src="assets/img/logo.png" alt="Decouvertes" />
+        <img loading="lazy" decoding="async" src="assets/img/logo.webp" alt="Decouvertes" />
         <p>Indigenous drone platforms for surveillance, industrial and mission-critical operations — engineered in Pune, India.</p>
       </div>
     </div>

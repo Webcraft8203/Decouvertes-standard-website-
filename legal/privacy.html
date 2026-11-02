@@ -31,9 +31,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="preload" href="../assets/fonts/roboto-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="../assets/css/styles.css" />
 <!-- Vercel Web Analytics -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
@@ -45,7 +43,7 @@
   <div class="site-header__inner">
     <div class="site-header__left">
       <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-      <a class="brand" href="../index.html"><img src="../assets/img/logo.png" alt="Decouvertes — Discovering Future Technologies" /></a>
+      <a class="brand" href="../index.html"><img src="../assets/img/logo.webp" alt="Decouvertes — Discovering Future Technologies" /></a>
     </div>
     <nav class="topnav" aria-label="Primary">
       <a href="../about.html">About Us</a>
@@ -60,7 +58,7 @@
 <div class="scrim"></div>
 <aside class="drawer" id="drawer" aria-label="Site menu">
   <div class="drawer__top">
-    <img loading="lazy" decoding="async" src="../assets/img/logo.png" alt="Decouvertes" />
+    <img loading="lazy" decoding="async" src="../assets/img/logo.webp" alt="Decouvertes" />
     <button class="drawer__close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   </div>
   <nav class="drawer__list">
@@ -135,8 +133,7 @@
 
       <h2 id="thirdparty">5. Third-party services</h2>
       <ul>
-        <li><strong>Google Maps.</strong> Our Contact page embeds a map from Google. When that map loads, Google may receive your IP address and set cookies. See Google&rsquo;s Privacy Policy for details.</li>
-        <li><strong>Google Fonts.</strong> Our pages load typefaces from Google&rsquo;s font service, which may involve a request to Google servers.</li>
+        <li><strong>Google Maps.</strong> Our Contact page can show a map from Google if you choose to open it. When that map loads, Google may receive your IP address and set cookies. See Google&rsquo;s Privacy Policy for details.</li>
         <li><strong>Website analytics.</strong> We use Vercel Web Analytics to count page views and visits in aggregate. It does not use cookies.</li>
         <li><strong>YouTube.</strong> Some pages embed videos from YouTube. When a video loads, Google may receive your IP address and collect data about your viewing.</li>
         <li><strong>X (formerly Twitter).</strong> Our news article on DD News embeds a post from X. When it loads, X may receive your IP address and set cookies.</li>
@@ -208,7 +205,7 @@
         </ul>
       </div>
       <div class="footer__col footer__brand">
-        <img loading="lazy" decoding="async" src="../assets/img/logo.png" alt="Decouvertes" />
+        <img loading="lazy" decoding="async" src="../assets/img/logo.webp" alt="Decouvertes" />
         <p>Indigenous drone platforms for surveillance, industrial and mission-critical operations — engineered in Pune, India.</p>
       </div>
     </div>

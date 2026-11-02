@@ -30,10 +30,10 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<link rel="preload" as="image" href="assets/img/hero/hero-field.jpg" fetchpriority="high" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="preload" as="image" href="assets/img/hero/hero-field-mobile.webp" media="(max-width:820px)" fetchpriority="high" />
+<link rel="preload" as="image" href="assets/img/hero/hero-field.webp" media="(min-width:821px)" fetchpriority="high" />
+<style>.hero .hero__slide--first{ background-image:url("assets/img/hero/hero-field.webp"); } @media (max-width:820px){ .hero .hero__slide--first{ background-image:url("assets/img/hero/hero-field-mobile.webp"); } }</style>
+<link rel="preload" href="assets/fonts/roboto-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="assets/css/styles.css" />
 <!-- Vercel Web Analytics -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
@@ -46,7 +46,7 @@
   <div class="site-header__inner">
     <div class="site-header__left">
       <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-      <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="Decouvertes — Discovering Future Technologies" /></a>
+      <a class="brand" href="index.html"><img src="assets/img/logo.webp" alt="Decouvertes — Discovering Future Technologies" /></a>
     </div>
     <nav class="topnav" aria-label="Primary">
       <a href="about.html">About Us</a>
@@ -61,7 +61,7 @@
 <div class="scrim"></div>
 <aside class="drawer" id="drawer" aria-label="Site menu">
   <div class="drawer__top">
-    <img loading="lazy" decoding="async" src="assets/img/logo.png" alt="Decouvertes" />
+    <img loading="lazy" decoding="async" src="assets/img/logo.webp" alt="Decouvertes" />
     <button class="drawer__close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   </div>
   <nav class="drawer__list">
@@ -85,20 +85,20 @@
 <section class="hero" aria-roledescription="carousel" aria-label="Decouvertes highlights">
   <div class="hero__slides">
 
-    <div class="hero__slide hero__slide--caption is-active" style="background-image:url('assets/img/hero/hero-field.jpg')">
+    <div class="hero__slide hero__slide--caption hero__slide--first is-active">
       <div class="container hero__inner">
         <span class="hero__caption">Endurance &amp; navigation trials<br />Western Ghats, Maharashtra</span>
       </div>
     </div>
 
-    <div class="hero__slide hero__slide--caption hero__slide--video" data-bg="assets/videos/vision-4-product-film-poster.jpg">
+    <div class="hero__slide hero__slide--caption hero__slide--video" data-bg="assets/videos/vision-4-product-film-poster.webp">
       <video class="hero__video" muted playsinline preload="none" data-src="assets/videos/vision-4-product-film.mp4" aria-label="Vision 4.0 product film"></video>
       <div class="container hero__inner">
         <a class="hero__caption" href="products/vision-4.html">Vision 4.0 product film<br />Explore the platform &rarr;</a>
       </div>
     </div>
 
-    <div class="hero__slide" data-bg="assets/img/hero/hero-briefing.jpg">
+    <div class="hero__slide" data-bg="assets/img/hero/hero-briefing.webp">
       <div class="container hero__inner">
         <span class="hero__eyebrow">Proven In The Field</span>
         <h2 class="hero__title">Evaluated alongside the forces who deploy them</h2>
@@ -109,7 +109,7 @@
       </div>
     </div>
 
-    <div class="hero__slide" data-bg="assets/img/hero/hero-hangar.jpg">
+    <div class="hero__slide" data-bg="assets/img/hero/hero-hangar.webp">
       <div class="container hero__inner">
         <span class="hero__eyebrow">Field-Tested Indigenous UAV</span>
         <h2 class="hero__title">Indigenous Tactical Drone Systems, Built in India</h2>
@@ -121,7 +121,7 @@
       </div>
     </div>
 
-    <div class="hero__slide" data-bg="assets/img/careers/team-photo.jpg">
+    <div class="hero__slide" data-bg="assets/img/careers/team-photo.webp">
       <div class="container hero__inner">
         <span class="hero__eyebrow">The People Behind It</span>
         <h2 class="hero__title">Engineers, technicians and pilots — all in-house, all Indian</h2>
@@ -132,13 +132,13 @@
       </div>
     </div>
 
-    <div class="hero__slide hero__slide--caption" data-bg="assets/img/hero/flight-clouds-1.jpg">
+    <div class="hero__slide hero__slide--caption" data-bg="assets/img/hero/flight-clouds-1.webp">
       <div class="container hero__inner">
         <span class="hero__caption">Pre-series airframe on a monsoon endurance sortie</span>
       </div>
     </div>
 
-    <div class="hero__slide hero__slide--caption" data-bg="assets/img/hero/flight-sky-2.jpg">
+    <div class="hero__slide hero__slide--caption" data-bg="assets/img/hero/flight-sky-2.webp">
       <div class="container hero__inner">
         <span class="hero__caption">Overhead loiter during a hover-endurance test</span>
       </div>
@@ -162,7 +162,7 @@
 <!-- ================= STATS ================= -->
 <section class="section stats-section">
   <div class="container">
-    <div class="stats" style="background-image:url('assets/img/gallery/ground-setup-3.jpg')">
+    <div class="stats" style="background-image:url('assets/img/gallery/ground-setup-3-bg.webp')">
       <div><div class="stats__num">2023</div><div class="stats__label">Founded</div><div class="stats__sub">Pune, Maharashtra</div></div>
       <div><div class="stats__num" data-count="5">5</div><div class="stats__label">Vision Series UAVs</div><div class="stats__sub">Designed and built in India</div></div>
       <div><div class="stats__num" data-count="4">4</div><div class="stats__label">Software Applications</div><div class="stats__sub">Developed in-house</div></div>
@@ -176,7 +176,7 @@
   <div class="container">
     <div class="recog">
       <a class="recog__badge reveal" href="assets/img/certificates/dpiit-recognition.jpg" target="_blank" rel="noopener" aria-label="View the DPIIT Certificate of Recognition">
-        <img loading="lazy" decoding="async" src="assets/img/certificates/dpiit-recognition.jpg" alt="DPIIT Certificate of Recognition — Decouvertes Future Tech Private Limited (DIPP254367)" />
+        <img loading="lazy" decoding="async" src="assets/img/certificates/dpiit-recognition.webp" alt="DPIIT Certificate of Recognition — Decouvertes Future Tech Private Limited (DIPP254367)" />
       </a>
       <div class="reveal d1">
         <p class="recog__text">Not just a company — together we are building India's <span class="hl">indigenous drone capability</span>, mission by mission.</p>
@@ -198,7 +198,7 @@
         <a class="btn btn--solid" href="about.html">Our Engineering Approach <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
       <div class="split__media reveal d1">
-        <img loading="lazy" decoding="async" data-fallback src="https://img.youtube.com/vi/BW8AdgVb_nw/maxresdefault.jpg" alt="Vision 4.0 project documentary thumbnail" />
+        <img loading="lazy" decoding="async" data-fallback src="https://img.youtube.com/vi/BW8AdgVb_nw/sddefault.jpg" alt="Vision 4.0 project documentary thumbnail" />
         <span class="split__video-tag">Vision 4.0 &middot; Project Documentary</span>
         <button class="split__play" type="button" data-video="BW8AdgVb_nw" aria-label="Play the Vision 4.0 project documentary"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       </div>
@@ -268,7 +268,7 @@
     </div>
     <div class="caps reveal d1">
       <article class="cap">
-        <div class="cap__img"><img loading="lazy" decoding="async" data-fallback src="assets/img/gallery/flight-treeline.jpg" alt="Decouvertes drone for surveillance and security" /></div>
+        <div class="cap__img"><img loading="lazy" decoding="async" data-fallback src="assets/img/gallery/flight-treeline.webp" alt="Decouvertes drone for surveillance and security" /></div>
         <h3>Surveillance &amp; Security</h3>
         <p>Real-time aerial intelligence for public safety, security, monitoring and situational awareness.</p>
         <a class="tlink" href="solutions.html#surveillance">Explore surveillance drones <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -286,13 +286,13 @@
         <a class="tlink" href="solutions.html#inspection">Explore inspection drones <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
       <article class="cap">
-        <div class="cap__img"><img loading="lazy" decoding="async" data-fallback src="assets/img/gallery/flight-clouds-1.jpg" alt="Decouvertes drone for disaster response" /></div>
+        <div class="cap__img"><img loading="lazy" decoding="async" data-fallback src="assets/img/gallery/flight-clouds-1.webp" alt="Decouvertes drone for disaster response" /></div>
         <h3>Disaster Response</h3>
         <p>Rapid situational awareness, search-and-rescue support and damage assessment for response teams.</p>
         <a class="tlink" href="solutions.html#disaster">Explore disaster response <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
       <article class="cap">
-        <div class="cap__img cap__img--full"><img loading="lazy" decoding="async" data-fallback src="assets/img/capabilities/gps-denied.png" alt="Decouvertes gps-denied navigation" /></div>
+        <div class="cap__img cap__img--full"><img loading="lazy" decoding="async" data-fallback src="assets/img/capabilities/gps-denied.webp" alt="Decouvertes gps-denied navigation" /></div>
         <h3>GPS-Denied Navigation</h3>
         <p>Navigation that keeps working when GNSS is jammed, spoofed or unavailable.</p>
         <a class="tlink" href="solutions.html#gps-denied">Explore GPS-denied navigation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -304,7 +304,7 @@
         <a class="tlink" href="solutions.html#artillery">Explore DOAF drones <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
       <article class="cap">
-        <div class="cap__img cap__img--full"><img loading="lazy" decoding="async" data-fallback src="assets/img/capabilities/ai-vision.png" alt="Decouvertes ai vision" /></div>
+        <div class="cap__img cap__img--full"><img loading="lazy" decoding="async" data-fallback src="assets/img/capabilities/ai-vision.webp" alt="Decouvertes ai vision" /></div>
         <h3>AI Vision</h3>
         <p>On-device object detection and anomaly flagging on live and recorded drone video.</p>
         <a class="tlink" href="solutions.html#ai-vision">Explore AI vision <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -325,7 +325,7 @@
     </div>
     <div class="bento">
       <a class="bt bt--tall reveal" href="products/vision-nano.html">
-        <div class="bt__img"><img data-fallback src="assets/img/products/vision-nano.png" alt="Vision Nano nano surveillance drone" /></div>
+        <div class="bt__img"><img loading="lazy" decoding="async" data-fallback src="assets/img/products/vision-nano.webp" alt="Vision Nano nano surveillance drone" /></div>
         <div class="bt__body"><span class="bt__label">Smallest drone</span><h3>Vision Nano</h3><p>For shooting video and keeping an eye on things without a big setup.</p><span class="bt__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></div>
       </a>
       <a class="bt bt--wide bt--w3 reveal d1" href="products/vision-1.html">
@@ -334,11 +334,11 @@
         <span class="bt__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
       </a>
       <a class="bt bt--card reveal d2" href="products/vision-2.html">
-        <div class="bt__img"><img loading="lazy" decoding="async" data-fallback src="assets/img/products/vision-2.png" alt="Vision 2.0 foldable surveillance drone" /></div>
+        <div class="bt__img"><img loading="lazy" decoding="async" data-fallback src="assets/img/products/vision-2.webp" alt="Vision 2.0 foldable surveillance drone" /></div>
         <div class="bt__body"><span class="bt__label">Foldable</span><h3>Vision 2.0</h3><p>Folds down for transport and keeps flying when GPS drops out. The one we&rsquo;ve taken to defence and government users.</p><span class="bt__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></div>
       </a>
       <a class="bt bt--card reveal d3" href="products/vision-3.html">
-        <div class="bt__img"><img loading="lazy" decoding="async" data-fallback src="assets/img/products/vision-3.png" alt="Vision 3.0 VTOL fixed-wing UAV" /></div>
+        <div class="bt__img"><img loading="lazy" decoding="async" data-fallback src="assets/img/products/vision-3.webp" alt="Vision 3.0 VTOL fixed-wing UAV" /></div>
         <div class="bt__body"><span class="bt__label">Long range</span><h3>Vision 3.0</h3><p>Takes off like a helicopter, flies like a plane. Long patrols over wide areas, no runway needed.</p><span class="bt__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></div>
       </a>
       <a class="bt bt--card reveal d4" href="products/vision-4.html">
@@ -351,7 +351,7 @@
         <span class="bt__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
       </a>
       <a class="bt bt--card reveal d6" href="custom-uav-development.html">
-        <div class="bt__img"><picture class="anim-media"><source media="(prefers-reduced-motion: reduce)" srcset="assets/img/custom-uav-still.jpg" /><img loading="lazy" decoding="async" data-fallback src="assets/img/custom-uav-animation.webp" alt="Animation of a custom UAV going from design to build, test and flight" /></picture></div>
+        <div class="bt__img"><picture class="anim-media"><source media="(prefers-reduced-motion: reduce)" srcset="assets/img/custom-uav-still.webp" /><img loading="lazy" decoding="async" data-fallback src="assets/img/custom-uav-animation.webp" alt="Animation of a custom UAV going from design to build, test and flight" /></picture></div>
         <div class="bt__body"><span class="bt__label">Built to order</span><h3>Custom UAV</h3><p>Need something the standard range doesn&rsquo;t do? We design and build UAVs around your mission.</p><span class="bt__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></div>
       </a>
       <a class="bt bt--cta reveal d7" href="products/index.html">
@@ -373,7 +373,7 @@
         <p>We design and manufacture custom UAVs in India, from airframe engineering and flight control to payload, navigation and communication integration, for defence, mapping, inspection and specialized missions.</p>
         <a class="btn btn--solid" href="custom-uav-development.html">Explore Custom UAV Development <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <div class="split__media reveal d1"><picture class="anim-media"><source media="(prefers-reduced-motion: reduce)" srcset="assets/img/custom-uav-still.jpg" /><img loading="lazy" decoding="async" data-fallback src="assets/img/custom-uav-animation.webp" alt="Animation of a custom UAV going from design to build, test and flight" /></picture></div>
+      <div class="split__media reveal d1"><picture class="anim-media"><source media="(prefers-reduced-motion: reduce)" srcset="assets/img/custom-uav-still.webp" /><img loading="lazy" decoding="async" data-fallback src="assets/img/custom-uav-animation.webp" alt="Animation of a custom UAV going from design to build, test and flight" /></picture></div>
     </div>
   </div>
 </section>
@@ -388,7 +388,7 @@
         <span class="chip"><img loading="lazy" decoding="async" src="assets/img/partners/mahar-regiment.svg" alt="Mahar Regiment, Indian Army" /></span>
         <span class="chip"><img loading="lazy" decoding="async" src="assets/img/partners/indian-army-eme.jpg" alt="Indian Army Corps of EME" /></span>
         <span class="chip"><img loading="lazy" decoding="async" src="assets/img/partners/abhyuday-bharat.svg" alt="Abhyuday Bharat Projects Pvt. Ltd." /></span>
-        <span class="chip"><img loading="lazy" decoding="async" src="assets/img/partners/aerodrone-robotics.png" alt="Aerodrone Robotics Pvt. Ltd." /></span>
+        <span class="chip"><img loading="lazy" decoding="async" src="assets/img/partners/aerodrone-robotics.webp" alt="Aerodrone Robotics Pvt. Ltd." /></span>
       </div>
       <div class="partners-dots" data-partners-dots></div>
     </div>
@@ -405,7 +405,7 @@
         <p>One standard across every platform: dependable, serviceable and sovereign.</p>
         <a class="btn btn--solid" href="about.html">Read Our Story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <div class="split__media reveal d1"><img loading="lazy" decoding="async" data-fallback src="assets/img/gallery/flight-clouds-2.jpg" alt="Decouvertes UAV on an endurance sortie" /></div>
+      <div class="split__media reveal d1"><img loading="lazy" decoding="async" data-fallback src="assets/img/gallery/flight-clouds-2.webp" alt="Decouvertes UAV on an endurance sortie" /></div>
     </div>
   </div>
 </section>
@@ -422,19 +422,19 @@
     </div>
     <div class="news">
       <a class="news-card reveal" href="decouvertes-registered-oem-on-gem.html">
-        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/news/gem-registered-oem.jpg" alt="" /><span class="news-card__pill">Corporate Update</span></div>
+        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/news/gem-registered-oem.webp" alt="" /><span class="news-card__pill">Corporate Update</span></div>
         <p class="news-card__title">Decouvertes is now a Registered OEM on GeM</p>
       </a>
       <a class="news-card reveal" href="vision-nano-on-dd-news.html">
-        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/news/dd-news-vision-nano.jpg" alt="" /><span class="news-card__pill">In the News</span></div>
+        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/news/dd-news-vision-nano.webp" alt="" /><span class="news-card__pill">In the News</span></div>
         <p class="news-card__title">Vision Nano featured on DD News&rsquo; Defence Dynamics</p>
       </a>
       <a class="news-card reveal" href="how-to-choose-a-surveillance-drone.html">
-        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/hero/hero-briefing.jpg" alt="" /><span class="news-card__pill">Guide</span></div>
+        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/hero/hero-briefing.webp" alt="" /><span class="news-card__pill">Guide</span></div>
         <p class="news-card__title">How to choose a surveillance drone for defence and security</p>
       </a>
       <a class="news-card reveal" href="vtol-vs-multirotor-drones.html">
-        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/products/vision-3-flight.jpg" alt="" /><span class="news-card__pill">Guide</span></div>
+        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/products/vision-3-flight.webp" alt="" /><span class="news-card__pill">Guide</span></div>
         <p class="news-card__title">VTOL fixed-wing vs multirotor drones: which suits your mission?</p>
       </a>
     </div>
@@ -471,7 +471,7 @@
   </div>
 </section>
 
-<section class="cta" style="background-image:url('assets/img/gallery/field-wide.jpg')">
+<section class="cta" style="background-image:url('assets/img/gallery/field-wide-bg.webp')">
   <div class="cta__bg"></div>
   <div class="container cta__inner reveal">
     <span class="eyebrow" style="justify-content:center;color:var(--amber)">Ready When You Are</span>
@@ -522,7 +522,7 @@
         </ul>
       </div>
       <div class="footer__col footer__brand">
-        <img loading="lazy" decoding="async" src="assets/img/logo.png" alt="Decouvertes" />
+        <img loading="lazy" decoding="async" src="assets/img/logo.webp" alt="Decouvertes" />
         <p>Indigenous drone platforms for surveillance, industrial and mission-critical operations — engineered in Pune, India.</p>
       </div>
     </div>

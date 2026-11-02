@@ -30,9 +30,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="preload" href="assets/fonts/roboto-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="assets/css/styles.css" />
 <!-- Vercel Web Analytics -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
@@ -44,7 +42,7 @@
   <div class="site-header__inner">
     <div class="site-header__left">
       <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-      <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="Decouvertes — Discovering Future Technologies" /></a>
+      <a class="brand" href="index.html"><img src="assets/img/logo.webp" alt="Decouvertes — Discovering Future Technologies" /></a>
     </div>
     <nav class="topnav" aria-label="Primary">
       <a href="about.html">About Us</a>
@@ -59,7 +57,7 @@
 <div class="scrim"></div>
 <aside class="drawer" id="drawer" aria-label="Site menu">
   <div class="drawer__top">
-    <img loading="lazy" decoding="async" src="assets/img/logo.png" alt="Decouvertes" />
+    <img loading="lazy" decoding="async" src="assets/img/logo.webp" alt="Decouvertes" />
     <button class="drawer__close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   </div>
   <nav class="drawer__list">
@@ -80,7 +78,7 @@
 <main>
 
 <section class="page-hero">
-  <div class="page-hero__media"><img fetchpriority="high" decoding="async" data-fallback src="assets/img/hero/hero-field.jpg" alt="" /></div>
+  <div class="page-hero__media"><img fetchpriority="high" decoding="async" data-fallback src="assets/img/hero/hero-field-bg.webp" alt="" /></div>
   <div class="container page-hero__inner">
     <p class="crumbs"><a href="index.html">Home</a> / <b>Gallery</b></p>
     <h1>A Closer Look at What We Build</h1>
@@ -100,20 +98,20 @@
       </div>
     </div>
     <div class="gallery-grid">
-      <figure class="reveal"><img loading="lazy" data-fallback src="assets/img/hero/hero-briefing.jpg" alt="Field demonstration and briefing" /><figcaption>Field demonstration &amp; briefing</figcaption></figure>
-      <figure class="reveal d1 tall"><img loading="lazy" data-fallback src="assets/img/gallery/flight-clouds-1.jpg" alt="UAV in flight under overcast skies" /><figcaption>Endurance flight under monsoon skies</figcaption></figure>
-      <figure class="reveal d2"><img loading="lazy" data-fallback src="assets/img/gallery/airframe-bay.jpg" alt="UAV airframe in the assembly bay" /><figcaption>UAV airframe in the assembly bay</figcaption></figure>
-      <figure class="reveal tall"><img loading="lazy" data-fallback src="assets/img/gallery/vision-desk.jpg" alt="Decouvertes VISION quadcopter at the office" /><figcaption>VISION platform — bench build at the office</figcaption></figure>
-      <figure class="reveal d1 tall"><img loading="lazy" data-fallback src="assets/img/gallery/airframe-driveway.jpg" alt="Carbon-composite quadcopter airframe" /><figcaption>Carbon-composite airframe — full build</figcaption></figure>
-      <figure class="reveal d2"><img loading="lazy" data-fallback src="assets/img/gallery/ground-setup-1.jpg" alt="Pre-flight setup on the trial ground" /><figcaption>Pre-flight setup on the trial ground</figcaption></figure>
-      <figure class="reveal d1"><img loading="lazy" data-fallback src="assets/img/gallery/facility-walkthrough.jpg" alt="Client walkthrough at the Pune facility" /><figcaption>Client walkthrough at our Pune facility</figcaption></figure>
-      <figure class="reveal d2 tall"><img loading="lazy" data-fallback src="assets/img/gallery/flight-clouds-2.jpg" alt="UAV climbing out during a test sortie" /><figcaption>Climb-out during a test sortie</figcaption></figure>
-      <figure class="reveal"><img loading="lazy" data-fallback src="assets/img/gallery/field-wide.jpg" alt="Autonomous mission over open terrain" /><figcaption>Autonomous waypoint mission over open terrain</figcaption></figure>
-      <figure class="reveal d1"><img loading="lazy" data-fallback src="assets/img/gallery/ground-setup-3.jpg" alt="Systems check before launch" /><figcaption>Systems check before launch</figcaption></figure>
-      <figure class="reveal d2"><img loading="lazy" data-fallback src="assets/img/gallery/transit-case.jpg" alt="UAV packed in a field transit case" /><figcaption>Packed for deployment — field transit case</figcaption></figure>
-      <figure class="reveal tall"><img loading="lazy" data-fallback src="assets/img/gallery/flight-treeline.jpg" alt="Low-altitude pass along the tree line" /><figcaption>Low-altitude pass along the tree line</figcaption></figure>
-      <figure class="reveal d1 tall"><img loading="lazy" data-fallback src="assets/img/gallery/vehicle-transport.jpg" alt="Vehicle-transportable UAV platform" /><figcaption>Vehicle-transportable platform</figcaption></figure>
-      <figure class="reveal d2 tall"><img loading="lazy" data-fallback src="assets/img/gallery/flight-sky-1.jpg" alt="UAV holding at altitude during endurance testing" /><figcaption>Holding at altitude during endurance testing</figcaption></figure>
+      <figure class="reveal"><img loading="lazy" data-fallback src="assets/img/hero/hero-briefing.webp" alt="Field demonstration and briefing" /><figcaption>Field demonstration &amp; briefing</figcaption></figure>
+      <figure class="reveal d1 tall"><img loading="lazy" data-fallback src="assets/img/gallery/flight-clouds-1.webp" alt="UAV in flight under overcast skies" /><figcaption>Endurance flight under monsoon skies</figcaption></figure>
+      <figure class="reveal d2"><img loading="lazy" data-fallback src="assets/img/gallery/airframe-bay.webp" alt="UAV airframe in the assembly bay" /><figcaption>UAV airframe in the assembly bay</figcaption></figure>
+      <figure class="reveal tall"><img loading="lazy" data-fallback src="assets/img/gallery/vision-desk.webp" alt="Decouvertes VISION quadcopter at the office" /><figcaption>VISION platform — bench build at the office</figcaption></figure>
+      <figure class="reveal d1 tall"><img loading="lazy" data-fallback src="assets/img/gallery/airframe-driveway.webp" alt="Carbon-composite quadcopter airframe" /><figcaption>Carbon-composite airframe — full build</figcaption></figure>
+      <figure class="reveal d2"><img loading="lazy" data-fallback src="assets/img/gallery/ground-setup-1.webp" alt="Pre-flight setup on the trial ground" /><figcaption>Pre-flight setup on the trial ground</figcaption></figure>
+      <figure class="reveal d1"><img loading="lazy" data-fallback src="assets/img/gallery/facility-walkthrough.webp" alt="Client walkthrough at the Pune facility" /><figcaption>Client walkthrough at our Pune facility</figcaption></figure>
+      <figure class="reveal d2 tall"><img loading="lazy" data-fallback src="assets/img/gallery/flight-clouds-2.webp" alt="UAV climbing out during a test sortie" /><figcaption>Climb-out during a test sortie</figcaption></figure>
+      <figure class="reveal"><img loading="lazy" data-fallback src="assets/img/gallery/field-wide.webp" alt="Autonomous mission over open terrain" /><figcaption>Autonomous waypoint mission over open terrain</figcaption></figure>
+      <figure class="reveal d1"><img loading="lazy" data-fallback src="assets/img/gallery/ground-setup-3.webp" alt="Systems check before launch" /><figcaption>Systems check before launch</figcaption></figure>
+      <figure class="reveal d2"><img loading="lazy" data-fallback src="assets/img/gallery/transit-case.webp" alt="UAV packed in a field transit case" /><figcaption>Packed for deployment — field transit case</figcaption></figure>
+      <figure class="reveal tall"><img loading="lazy" data-fallback src="assets/img/gallery/flight-treeline.webp" alt="Low-altitude pass along the tree line" /><figcaption>Low-altitude pass along the tree line</figcaption></figure>
+      <figure class="reveal d1 tall"><img loading="lazy" data-fallback src="assets/img/gallery/vehicle-transport.webp" alt="Vehicle-transportable UAV platform" /><figcaption>Vehicle-transportable platform</figcaption></figure>
+      <figure class="reveal d2 tall"><img loading="lazy" data-fallback src="assets/img/gallery/flight-sky-1.webp" alt="UAV holding at altitude during endurance testing" /><figcaption>Holding at altitude during endurance testing</figcaption></figure>
     </div>
   </div>
 </section>
@@ -126,7 +124,7 @@
         <p>We run scheduled demonstration flights for defence and enterprise evaluation teams. Get in touch to arrange one.</p>
         <a class="btn btn--solid" href="contact.html">Request a Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <div class="split__media reveal d1"><img loading="lazy" decoding="async" data-fallback src="assets/img/gallery/flight-sky-2.jpg" alt="Decouvertes UAV in flight" /></div>
+      <div class="split__media reveal d1"><img loading="lazy" decoding="async" data-fallback src="assets/img/gallery/flight-sky-2.webp" alt="Decouvertes UAV in flight" /></div>
     </div>
   </div>
 </section>
@@ -167,7 +165,7 @@
         </ul>
       </div>
       <div class="footer__col footer__brand">
-        <img loading="lazy" decoding="async" src="assets/img/logo.png" alt="Decouvertes" />
+        <img loading="lazy" decoding="async" src="assets/img/logo.webp" alt="Decouvertes" />
         <p>Indigenous drone platforms for surveillance, industrial and mission-critical operations — engineered in Pune, India.</p>
       </div>
     </div>

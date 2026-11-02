@@ -5,6 +5,8 @@
    left slide-out menu, grey column footer. Tokens in :root below.
    ============================================================= */
 
+@font-face{ font-family:"Roboto"; font-style:normal; font-weight:100 900; font-stretch:100%; font-display:swap; src:url("../fonts/roboto-latin.woff2") format("woff2"); }
+
 :root{
   --ink:        #131619;
   --ink-soft:   #383e43;
@@ -1233,3 +1235,5 @@ a.tile{ color:inherit; }
 .problem-list--look li::before{ content:"\2713"; background:#1f9d63; }
 a.tile .problem-card__tag{ display:block; }
 @media (max-width:860px){ .problem-two{ grid-template-columns:1fr; } }
+.map-facade{ min-height:260px; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; padding:24px; text-align:center; background:var(--band); }
+.map-facade p{ color:var(--muted); max-width:420px; }

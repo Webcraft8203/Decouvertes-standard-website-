@@ -30,9 +30,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="preload" href="../assets/fonts/roboto-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="../assets/css/styles.css" />
 <!-- Vercel Web Analytics -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
@@ -44,7 +42,7 @@
   <div class="site-header__inner">
     <div class="site-header__left">
       <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-      <a class="brand" href="../index.html"><img src="../assets/img/logo.png" alt="Decouvertes — Discovering Future Technologies" /></a>
+      <a class="brand" href="../index.html"><img src="../assets/img/logo.webp" alt="Decouvertes — Discovering Future Technologies" /></a>
     </div>
     <nav class="topnav" aria-label="Primary">
       <a href="../about.html">About Us</a>
@@ -59,7 +57,7 @@
 <div class="scrim"></div>
 <aside class="drawer" id="drawer" aria-label="Site menu">
   <div class="drawer__top">
-    <img loading="lazy" decoding="async" src="../assets/img/logo.png" alt="Decouvertes" />
+    <img loading="lazy" decoding="async" src="../assets/img/logo.webp" alt="Decouvertes" />
     <button class="drawer__close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   </div>
   <nav class="drawer__list">
@@ -82,7 +80,7 @@
 <section class="hero" aria-roledescription="carousel" aria-label="Careers highlights">
   <div class="hero__slides">
 
-    <div class="hero__slide is-active" style="background-image:url('../assets/img/gallery/airframe-bay.jpg')">
+    <div class="hero__slide is-active" style="background-image:url('../assets/img/gallery/airframe-bay.webp')">
       <div class="container hero__inner">
         <p class="crumbs"><a href="../index.html">Home</a> / <b>Careers</b></p>
         <span class="hero__eyebrow">Careers At Decouvertes</span>
@@ -94,13 +92,13 @@
       </div>
     </div>
 
-    <div class="hero__slide hero__slide--caption" style="background-image:url('../assets/img/gallery/facility-walkthrough.jpg')">
+    <div class="hero__slide hero__slide--caption" style="background-image:url('../assets/img/gallery/facility-walkthrough.webp')">
       <div class="container hero__inner">
         <span class="hero__caption">Design it, print it, fly it<br />Often in the same week</span>
       </div>
     </div>
 
-    <div class="hero__slide hero__slide--caption" style="background-image:url('../assets/img/gallery/ground-setup-1.jpg')">
+    <div class="hero__slide hero__slide--caption" style="background-image:url('../assets/img/gallery/ground-setup-1.webp')">
       <div class="container hero__inner">
         <span class="hero__caption">Field-tested by the people who built it</span>
       </div>
@@ -124,7 +122,7 @@
 <section class="section">
   <div class="container">
     <div class="split">
-      <div class="split__media reveal"><img loading="lazy" decoding="async" data-fallback src="../assets/img/careers/team-photo.jpg" alt="The Decouvertes team at our Pune facility" /></div>
+      <div class="split__media reveal"><img loading="lazy" decoding="async" data-fallback src="../assets/img/careers/team-photo.webp" alt="The Decouvertes team at our Pune facility" /></div>
       <div class="split__text reveal d1">
         <span class="eyebrow">Who You&rsquo;d Be Joining</span>
         <h2>Still small enough that everyone knows what everyone&rsquo;s building</h2>
@@ -222,7 +220,7 @@
   </div>
 </section>
 
-<section class="cta" style="background-image:url('../assets/img/hero/hero-hangar.jpg')">
+<section class="cta" style="background-image:url('../assets/img/hero/hero-hangar-bg.webp')">
   <div class="cta__bg"></div>
   <div class="container cta__inner reveal">
     <span class="eyebrow" style="justify-content:center;color:var(--amber)">Working At Decouvertes</span>
@@ -273,7 +271,7 @@
         </ul>
       </div>
       <div class="footer__col footer__brand">
-        <img loading="lazy" decoding="async" src="../assets/img/logo.png" alt="Decouvertes" />
+        <img loading="lazy" decoding="async" src="../assets/img/logo.webp" alt="Decouvertes" />
         <p>Indigenous drone platforms for surveillance, industrial and mission-critical operations — engineered in Pune, India.</p>
       </div>
     </div>

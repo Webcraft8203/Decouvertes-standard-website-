@@ -31,9 +31,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="preload" href="assets/fonts/roboto-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="assets/css/styles.css" />
 <!-- Vercel Web Analytics -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
@@ -45,7 +43,7 @@
   <div class="site-header__inner">
     <div class="site-header__left">
       <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-      <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="Decouvertes — Discovering Future Technologies" /></a>
+      <a class="brand" href="index.html"><img src="assets/img/logo.webp" alt="Decouvertes — Discovering Future Technologies" /></a>
     </div>
     <nav class="topnav" aria-label="Primary">
       <a href="about.html">About Us</a>
@@ -60,7 +58,7 @@
 <div class="scrim"></div>
 <aside class="drawer" id="drawer" aria-label="Site menu">
   <div class="drawer__top">
-    <img loading="lazy" decoding="async" src="assets/img/logo.png" alt="Decouvertes" />
+    <img loading="lazy" decoding="async" src="assets/img/logo.webp" alt="Decouvertes" />
     <button class="drawer__close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   </div>
   <nav class="drawer__list">
@@ -81,7 +79,7 @@
 <main>
 
 <section class="page-hero">
-  <div class="page-hero__media"><img fetchpriority="high" decoding="async" data-fallback src="assets/img/gallery/flight-sky-1.jpg" alt="" /></div>
+  <div class="page-hero__media"><img fetchpriority="high" decoding="async" data-fallback src="assets/img/gallery/flight-sky-1.webp" alt="" /></div>
   <div class="container page-hero__inner">
     <p class="crumbs"><a href="index.html">Home</a> / <a href="blog.html">Media &amp; Insights</a> / <b>In the News</b></p>
     <span class="product-badge">In the News</span>
@@ -133,7 +131,7 @@
       <h2>Watch the full programme</h2>
       <p>The complete Defence Dynamics episode, including the Vision Nano segment, is on DD News&rsquo; YouTube channel.</p>
       <div class="split__media post__video">
-        <img loading="lazy" decoding="async" data-fallback src="https://img.youtube.com/vi/pX7JhXVnaB8/maxresdefault.jpg" alt="DD News Defence Dynamics full episode" />
+        <img loading="lazy" decoding="async" data-fallback src="https://img.youtube.com/vi/pX7JhXVnaB8/sddefault.jpg" alt="DD News Defence Dynamics full episode" />
         <span class="split__video-tag">DD News &middot; Full episode</span>
         <button class="split__play" type="button" data-video="pX7JhXVnaB8" aria-label="Play the full Defence Dynamics episode"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       </div>
@@ -153,7 +151,7 @@
     <aside class="post-aside">
       <div class="post-card-side">
         <span class="post-card-side__label">Featured product</span>
-        <a class="post-card-side__img" href="products/vision-nano.html"><img loading="lazy" decoding="async" src="assets/img/products/vision-nano.png" alt="Vision Nano micro-drone" /></a>
+        <a class="post-card-side__img" href="products/vision-nano.html"><img loading="lazy" decoding="async" src="assets/img/products/vision-nano.webp" alt="Vision Nano micro-drone" /></a>
         <h3>Vision Nano</h3>
         <p>A 250 g nano drone for close-range surveillance, reconnaissance and videography.</p>
         <a class="btn btn--solid" href="products/vision-nano.html">Explore Vision Nano <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -184,15 +182,15 @@
     <div class="section-head reveal"><div><span class="eyebrow">Keep reading</span><h2>Related articles</h2></div></div>
     <div class="news news--3">
       <a class="news-card reveal" href="decouvertes-registered-oem-on-gem.html">
-        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/news/gem-registered-oem.jpg" alt="" /><span class="news-card__pill">Corporate Update</span></div>
+        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/news/gem-registered-oem.webp" alt="" /><span class="news-card__pill">Corporate Update</span></div>
         <p class="news-card__title">Decouvertes is now a Registered OEM on GeM</p>
       </a>
       <a class="news-card reveal" href="how-to-choose-a-surveillance-drone.html">
-        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/hero/hero-briefing.jpg" alt="" /><span class="news-card__pill">Guide</span></div>
+        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/hero/hero-briefing.webp" alt="" /><span class="news-card__pill">Guide</span></div>
         <p class="news-card__title">How to choose a surveillance drone for defence and security</p>
       </a>
       <a class="news-card reveal" href="vtol-vs-multirotor-drones.html">
-        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/products/vision-3-flight.jpg" alt="" /><span class="news-card__pill">Guide</span></div>
+        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/products/vision-3-flight.webp" alt="" /><span class="news-card__pill">Guide</span></div>
         <p class="news-card__title">VTOL fixed-wing vs multirotor drones: which suits your mission?</p>
       </a>
     </div>
@@ -235,7 +233,7 @@
         </ul>
       </div>
       <div class="footer__col footer__brand">
-        <img loading="lazy" decoding="async" src="assets/img/logo.png" alt="Decouvertes" />
+        <img loading="lazy" decoding="async" src="assets/img/logo.webp" alt="Decouvertes" />
         <p>Indigenous drone platforms for surveillance, industrial and mission-critical operations — engineered in Pune, India.</p>
       </div>
     </div>

@@ -31,9 +31,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="preload" href="assets/fonts/roboto-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="assets/css/styles.css" />
 <!-- Vercel Web Analytics -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
@@ -45,7 +43,7 @@
   <div class="site-header__inner">
     <div class="site-header__left">
       <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-      <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="Decouvertes — Discovering Future Technologies" /></a>
+      <a class="brand" href="index.html"><img src="assets/img/logo.webp" alt="Decouvertes — Discovering Future Technologies" /></a>
     </div>
     <nav class="topnav" aria-label="Primary">
       <a href="about.html">About Us</a>
@@ -60,7 +58,7 @@
 <div class="scrim"></div>
 <aside class="drawer" id="drawer" aria-label="Site menu">
   <div class="drawer__top">
-    <img loading="lazy" decoding="async" src="assets/img/logo.png" alt="Decouvertes" />
+    <img loading="lazy" decoding="async" src="assets/img/logo.webp" alt="Decouvertes" />
     <button class="drawer__close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   </div>
   <nav class="drawer__list">
@@ -81,7 +79,7 @@
 <main>
 
 <section class="page-hero">
-  <div class="page-hero__media"><img fetchpriority="high" decoding="async" data-fallback src="assets/img/capabilities/survey-mapping.webp" alt="" /></div>
+  <div class="page-hero__media"><img fetchpriority="high" decoding="async" data-fallback src="assets/img/capabilities/survey-mapping-bg.webp" alt="" /></div>
   <div class="container page-hero__inner">
     <p class="crumbs"><a href="index.html">Home</a> / <a href="blog.html">Media &amp; Insights</a> / <b>Guide</b></p>
     <span class="product-badge">Guide</span>
@@ -143,7 +141,7 @@
     <aside class="post-aside">
       <div class="post-card-side">
         <span class="post-card-side__label">From the Vision series</span>
-        <a class="post-card-side__img" href="products/vision-3.html"><img loading="lazy" decoding="async" src="assets/img/products/vision-3.png" alt="Vision 3.0 VTOL fixed-wing UAV" /></a>
+        <a class="post-card-side__img" href="products/vision-3.html"><img loading="lazy" decoding="async" src="assets/img/products/vision-3.webp" alt="Vision 3.0 VTOL fixed-wing UAV" /></a>
         <h3>Vision 3.0</h3>
         <p>VTOL fixed-wing UAV for large-area and corridor mapping.</p>
         <a class="btn btn--solid" href="products/vision-3.html">View Vision 3.0 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -163,15 +161,15 @@
     <div class="section-head reveal"><div><span class="eyebrow">Keep reading</span><h2>Related articles</h2></div></div>
     <div class="news news--3">
       <a class="news-card reveal" href="vtol-vs-multirotor-drones.html">
-        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/products/vision-3-flight.jpg" alt="" /><span class="news-card__pill">Guide</span></div>
+        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/products/vision-3-flight.webp" alt="" /><span class="news-card__pill">Guide</span></div>
         <p class="news-card__title">VTOL fixed-wing vs multirotor drones: which suits your mission?</p>
       </a>
       <a class="news-card reveal" href="gps-denied-drone-navigation.html">
-        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/capabilities/gps-denied.png" alt="" /><span class="news-card__pill">Explainer</span></div>
+        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/capabilities/gps-denied.webp" alt="" /><span class="news-card__pill">Explainer</span></div>
         <p class="news-card__title">What is GPS-denied navigation, and why do defence drones need it?</p>
       </a>
       <a class="news-card reveal" href="how-to-choose-a-surveillance-drone.html">
-        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/hero/hero-briefing.jpg" alt="" /><span class="news-card__pill">Guide</span></div>
+        <div class="news-card__thumb"><img loading="lazy" decoding="async" data-fallback src="assets/img/hero/hero-briefing.webp" alt="" /><span class="news-card__pill">Guide</span></div>
         <p class="news-card__title">How to choose a surveillance drone for defence and security</p>
       </a>
     </div>
@@ -214,7 +212,7 @@
         </ul>
       </div>
       <div class="footer__col footer__brand">
-        <img loading="lazy" decoding="async" src="assets/img/logo.png" alt="Decouvertes" />
+        <img loading="lazy" decoding="async" src="assets/img/logo.webp" alt="Decouvertes" />
         <p>Indigenous drone platforms for surveillance, industrial and mission-critical operations — engineered in Pune, India.</p>
       </div>
     </div>

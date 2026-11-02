@@ -30,9 +30,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="preload" href="assets/fonts/roboto-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="assets/css/styles.css" />
 <!-- Vercel Web Analytics -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
@@ -44,7 +42,7 @@
   <div class="site-header__inner">
     <div class="site-header__left">
       <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
-      <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="Decouvertes — Discovering Future Technologies" /></a>
+      <a class="brand" href="index.html"><img src="assets/img/logo.webp" alt="Decouvertes — Discovering Future Technologies" /></a>
     </div>
     <nav class="topnav" aria-label="Primary">
       <a href="about.html">About Us</a>
@@ -59,7 +57,7 @@
 <div class="scrim"></div>
 <aside class="drawer" id="drawer" aria-label="Site menu">
   <div class="drawer__top">
-    <img loading="lazy" decoding="async" src="assets/img/logo.png" alt="Decouvertes" />
+    <img loading="lazy" decoding="async" src="assets/img/logo.webp" alt="Decouvertes" />
     <button class="drawer__close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   </div>
   <nav class="drawer__list">
@@ -80,7 +78,7 @@
 <main>
 
 <section class="page-hero">
-  <div class="page-hero__media"><img fetchpriority="high" decoding="async" data-fallback src="assets/img/gallery/facility-walkthrough.jpg" alt="" /></div>
+  <div class="page-hero__media"><img fetchpriority="high" decoding="async" data-fallback src="assets/img/gallery/facility-walkthrough-bg.webp" alt="" /></div>
   <div class="container page-hero__inner">
     <p class="crumbs"><a href="index.html">Home</a> / <b>Contact Us</b></p>
     <h1>Let's Take Flight Together</h1>
@@ -128,8 +126,7 @@
     </div>
 
     <div class="map-wrap reveal">
-      <iframe title="Decouvertes location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=Gera%27s%20Imperium%20Gateway%2C%20Kasarwadi%2C%20Pimpri-Chinchwad%2C%20Pune&output=embed"></iframe>
+      <div class="map-facade" data-map-src="https://www.google.com/maps?q=Gera%27s%20Imperium%20Gateway%2C%20Kasarwadi%2C%20Pimpri-Chinchwad%2C%20Pune&output=embed"><p>Gera&rsquo;s Imperium Gateway, Kasarwadi, Pimpri-Chinchwad, Pune</p><button class="btn btn--solid" type="button">Show map</button><a class="tlink" href="https://www.google.com/maps/search/?api=1&amp;query=Gera%27s%20Imperium%20Gateway%2C%20Kasarwadi%2C%20Pimpri-Chinchwad%2C%20Pune" target="_blank" rel="noopener">Open in Google Maps</a></div>
     </div>
   </div>
 </section>
@@ -204,7 +201,7 @@
         </ul>
       </div>
       <div class="footer__col footer__brand">
-        <img loading="lazy" decoding="async" src="assets/img/logo.png" alt="Decouvertes" />
+        <img loading="lazy" decoding="async" src="assets/img/logo.webp" alt="Decouvertes" />
         <p>Indigenous drone platforms for surveillance, industrial and mission-critical operations — engineered in Pune, India.</p>
       </div>
     </div>

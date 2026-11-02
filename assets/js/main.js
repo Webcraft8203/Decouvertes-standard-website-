@@ -88,15 +88,14 @@
       hDots.appendChild(d);
     });
     var hDotEls = [].slice.call(hDots.children);
-    /* Only the first slide's image is in the markup; the rest load once the
-       page has finished, or earlier if a slide is opened first. */
+    /* Only the first slide's image is in the markup. Each later slide loads
+       when it is next in line, or when it is opened directly. */
     var hLoadBg = function (slide) {
       if (!slide.dataset.bg) return;
       slide.style.backgroundImage = "url('" + slide.dataset.bg + "')";
       delete slide.dataset.bg;
     };
-    var hLoadAllBg = function () { hSlides.forEach(hLoadBg); };
-    if (document.readyState === "complete") hLoadAllBg(); else window.addEventListener("load", hLoadAllBg);
+    
     var hVideo = function () { return hSlides[hIdx].querySelector("video"); };
     /* Video slides load their film only when first shown, play it through
        once, then hand back to the slideshow. */
@@ -119,6 +118,7 @@
       hDotEls[hIdx].classList.remove("is-active");
       hIdx = (n + hSlides.length) % hSlides.length;
       hLoadBg(hSlides[hIdx]);
+      hLoadBg(hSlides[(hIdx + 1) % hSlides.length]);
       hSlides[hIdx].classList.add("is-active");
       hDotEls[hIdx].classList.add("is-active");
       if (hCurrentEl) hCurrentEl.textContent = hIdx + 1;
@@ -148,6 +148,7 @@
         else { hPlayVideo(); hReset(); }
       });
     }
+    setTimeout(function () { hLoadBg(hSlides[1]); }, 3000);
     hReset();
   }
 
@@ -165,6 +166,17 @@
         "&body=" + encodeURIComponent(lines.join("\n\n"));
       var note = form.querySelector("[data-form-note]");
       if (note) note.textContent = "Your email app should now be open with your details filled in. Press send to reach us. If nothing opened, write to " + to + ".";
+    });
+  });
+
+  /* ---------- Contact map: the map scripts load only when asked for ---------- */
+  document.querySelectorAll("[data-map-src]").forEach(function (box) {
+    box.querySelector("button").addEventListener("click", function () {
+      var f = document.createElement("iframe");
+      f.title = "Decouvertes location";
+      f.referrerPolicy = "no-referrer-when-downgrade";
+      f.src = box.getAttribute("data-map-src");
+      box.parentNode.replaceChild(f, box);
     });
   });
 
