@@ -24,7 +24,7 @@
 <meta name="twitter:description" content="Why responders lack situational awareness after floods, earthquakes and wildfires, and how drones map damage, find survivors and relay communications." />
 <meta name="twitter:image" content="https://www.decouvertes.in/assets/img/gallery/field-wide.jpg" />
 <meta name="theme-color" content="#10161a" />
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.decouvertes.in/"},{"@type":"ListItem","position":2,"name":"Problems We Solve","item":"https://www.decouvertes.in/problems/"},{"@type":"ListItem","position":3,"name":"Blind in the first hours of a disaster","item":"https://www.decouvertes.in/problems/disaster-response.html"}]},{"@type":"Article","headline":"Disaster response drones: see the situation in the first hours","description":"Why responders lack situational awareness after floods, earthquakes and wildfires, and how drones map damage, find survivors and relay communications.","image":["https://www.decouvertes.in/assets/img/gallery/field-wide.jpg"],"datePublished":"2026-11-02T10:00:00+05:30","dateModified":"2026-11-02T10:00:00+05:30","author":{"@id":"https://www.decouvertes.in/#organization"},"publisher":{"@id":"https://www.decouvertes.in/#organization"},"mainEntityOfPage":"https://www.decouvertes.in/problems/disaster-response.html"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How quickly can a drone deploy in a disaster?","acceptedAnswer":{"@type":"Answer","text":"Our platforms are designed to deploy within minutes. Plan and practise in advance, because real response time depends on your team and location."}},{"@type":"Question","name":"Can drones find survivors?","acceptedAnswer":{"@type":"Answer","text":"Thermal imaging can help locate people, especially against a cooler background. Ground teams still confirm and carry out the rescue."}},{"@type":"Question","name":"Can drones work without a mobile network?","acceptedAnswer":{"@type":"Answer","text":"Yes. Flight does not depend on mobile coverage, and a mesh relay can help connect teams where infrastructure is down."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.decouvertes.in/"},{"@type":"ListItem","position":2,"name":"Problems We Solve","item":"https://www.decouvertes.in/problems/"},{"@type":"ListItem","position":3,"name":"Blind in the first hours of a disaster","item":"https://www.decouvertes.in/problems/disaster-response.html"}]},{"@type":"Article","headline":"Disaster response drones: see the situation in the first hours","description":"Why responders lack situational awareness after floods, earthquakes and wildfires, and how drones map damage, find survivors and relay communications.","image":["https://www.decouvertes.in/assets/img/gallery/field-wide.jpg"],"datePublished":"2026-11-02T10:00:00+05:30","dateModified":"2026-11-02","author":{"@id":"https://www.decouvertes.in/#organization"},"publisher":{"@id":"https://www.decouvertes.in/#organization"},"mainEntityOfPage":"https://www.decouvertes.in/problems/disaster-response.html"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How quickly can a drone deploy in a disaster?","acceptedAnswer":{"@type":"Answer","text":"Our platforms are designed to deploy within minutes. Plan and practise in advance, because real response time depends on your team and location."}},{"@type":"Question","name":"Can drones find survivors?","acceptedAnswer":{"@type":"Answer","text":"Thermal imaging can help locate people, especially against a cooler background. Ground teams still confirm and carry out the rescue."}},{"@type":"Question","name":"Can drones work without a mobile network?","acceptedAnswer":{"@type":"Answer","text":"Yes. Flight does not depend on mobile coverage, and a mesh relay can help connect teams where infrastructure is down."}},{"@type":"Question","name":"What should an emergency drone team practise?","acceptedAnswer":{"@type":"Answer","text":"Fast set-up, flying in poor conditions, passing findings to command, and coordinating with other responders and aircraft."}},{"@type":"Question","name":"How can a disaster team stay connected without a network?","acceptedAnswer":{"@type":"Answer","text":"Mesh devices such as Sandesh link directly to one another, with no SIM, tower or internet connection."}}]}]}</script>
 <!-- /SEO -->
 <link rel="icon" href="/favicon.ico" sizes="48x48" />
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
@@ -89,23 +89,54 @@
   <span class="page-hero__strip"></span>
 </section>
 
-<section class="section">
+<section class="pg-summary" aria-label="At a glance">
   <div class="container">
-    <div class="section-head reveal"><div><span class="eyebrow">The Problem</span><h2>How do drones help after a flood or earthquake?</h2><p>What separates a fast response from a slow one is knowing where people are and which routes are open. In the first hours, that information is often the hardest thing to get.</p></div></div>
+    <div class="pg-summary__grid">
+      <div><span>Who faces it</span><p>Disaster response forces, district authorities and relief agencies.</p></div>
+      <div><span>The main risk</span><p>Command has to make early decisions from scattered and incomplete reports.</p></div>
+      <div><span>What helps</span><p>A fast aerial view, thermal search, a live shared map and backup communications.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="container pg-layout">
+  <nav class="pg-toc" aria-label="On this page">
+    <p>On this page</p>
+    <ul>
+      <li><a href="#problem">The problem</a></li>
+      <li><a href="#who">Who it affects</a></li>
+      <li><a href="#signs">Signs and what to look for</a></li>
+      <li><a href="#causes">Main causes</a></li>
+      <li><a href="#compare">Before and after</a></li>
+      <li><a href="#steps">How to solve it</a></li>
+      <li><a href="#mistakes">Mistakes and questions</a></li>
+      <li><a href="#use">What to use</a></li>
+      <li><a href="#faq">Common questions</a></li>
+    </ul>
+    <a class="btn btn--solid" href="../contact.html">Talk to Our Team</a>
+  </nav>
+  <div class="pg-main">
+<section class="pg-block" id="problem">
+<div class="section-head reveal"><div><span class="eyebrow">The Problem</span><h2>How do drones help after a flood or earthquake?</h2><p>What separates a fast response from a slow one is knowing where people are and which routes are open. In the first hours, that information is often the hardest thing to get.</p></div></div>
     <div class="scene">
-      <figure class="scene__panel scene__panel--bad reveal"><figcaption><strong>The problem</strong>Damage, survivors and open routes are unknown.</figcaption><svg viewBox="0 0 360 240" role="img" aria-label="Damage, survivors and open routes are unknown." xmlns="http://www.w3.org/2000/svg"><path d="M14 170q28 -14 56 0t56 0t56 0t56 0t56 0t56 0" fill="none" stroke="#5b8fb9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M62 170v-22l18 -15l18 15v22z" fill="#fff" stroke="#7b848a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M162 170v-22l18 -15l18 15v22z" fill="#fff" stroke="#7b848a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M262 170v-22l18 -15l18 15v22z" fill="#fff" stroke="#7b848a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M294 100L310 30L326 100M301 75.5H319M305 52.4H315" fill="none" stroke="#d93636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="310" cy="62" r="14" fill="#fff" stroke="#d93636" stroke-width="2.5"/><path d="M304.5 56.5l11 11M315.5 56.5l-11 11" fill="none" stroke="#d93636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="130" y="85" fill="#d93636" font-size="34" font-weight="700" text-anchor="middle" font-family="Roboto,Arial,sans-serif">? ? ?</text><rect x="60.2" y="100" width="139.6" height="24" rx="12" fill="#d93636"/><text x="130" y="117" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">No clear picture</text><text x="180" y="215" fill="#7b848a" font-size="14" font-weight="500" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Roads cut, network down</text></svg></figure>
-      <figure class="scene__panel scene__panel--good reveal d1"><figcaption><strong>The solution</strong>Thermal search and a live map keep command informed.</figcaption><svg viewBox="0 0 360 240" role="img" aria-label="Thermal search and a live map keep command informed." xmlns="http://www.w3.org/2000/svg"><path d="M14 180q28 -14 56 0t56 0t56 0t56 0t56 0t56 0" fill="none" stroke="#5b8fb9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M72 180v-22l18 -15l18 15v22z" fill="#fff" stroke="#7b848a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><g stroke="#d93636" stroke-width="3" stroke-linecap="round" fill="none"><circle cx="200" cy="150" r="6" fill="#d93636"/><path d="M200 156v19M200 161l-9 8M200 161l9 8M200 175l-7 13M200 175l7 13"/></g><g fill="#131619" stroke="#131619" stroke-linecap="round"><rect x="188" y="44" width="24" height="12" rx="4" stroke="none"/><path d="M174 47H188M212 47H226" stroke-width="3" fill="none"/><path d="M163 41H185M215 41H237" stroke-width="2.5" fill="none"/><path d="M174 41v6M226 41v6" stroke-width="2.5" fill="none"/><path d="M192 56l-4 9M208 56l4 9" stroke-width="2.5" fill="none"/></g><path d="M200 64L145 178L255 178Z" fill="#d93636" opacity=".18"/><rect x="215.2" y="100" width="139.6" height="24" rx="12" fill="#d93636"/><text x="285" y="117" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Survivor located</text><rect x="26" y="60" width="62" height="40" rx="6" fill="#fff" stroke="#131619" stroke-width="2.5"/><path d="M34 90l12 -14l10 8l14 -16" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="88" y1="76" x2="165" y2="54" stroke="#1f9d63" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 5"/><text x="57" y="120" fill="#131619" font-size="13" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Command</text></svg></figure>
+      <figure class="scene__panel scene__panel--bad reveal"><figcaption><strong>The problem</strong>Damage, survivors and open routes are unknown.</figcaption><svg viewBox="0 18 360 213" role="img" aria-label="Damage, survivors and open routes are unknown." xmlns="http://www.w3.org/2000/svg"><path d="M14 170q28 -14 56 0t56 0t56 0t56 0t56 0t56 0" fill="none" stroke="#5b8fb9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M62 170v-22l18 -15l18 15v22z" fill="#fff" stroke="#7b848a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M162 170v-22l18 -15l18 15v22z" fill="#fff" stroke="#7b848a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M262 170v-22l18 -15l18 15v22z" fill="#fff" stroke="#7b848a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M294 100L310 30L326 100M301 75.5H319M305 52.4H315" fill="none" stroke="#d93636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><g class="fx-badge"><circle cx="310" cy="62" r="14" fill="#fff" stroke="#d93636" stroke-width="2.5"/><path d="M304.5 56.5l11 11M315.5 56.5l-11 11" fill="none" stroke="#d93636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g><text x="130" y="85" fill="#d93636" font-size="34" font-weight="700" text-anchor="middle" font-family="Roboto,Arial,sans-serif">? ? ?</text><g class="fx-pill"><rect x="60.2" y="100" width="139.6" height="24" rx="12" fill="#d93636"/><text x="130" y="117" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">No clear picture</text></g><text x="180" y="215" fill="#7b848a" font-size="14" font-weight="500" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Roads cut, network down</text></svg></figure>
+      <figure class="scene__panel scene__panel--good reveal d1"><figcaption><strong>The solution</strong>Thermal search and a live map keep command informed.</figcaption><svg viewBox="0 18 360 213" role="img" aria-label="Thermal search and a live map keep command informed." xmlns="http://www.w3.org/2000/svg"><path d="M14 180q28 -14 56 0t56 0t56 0t56 0t56 0t56 0" fill="none" stroke="#5b8fb9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M72 180v-22l18 -15l18 15v22z" fill="#fff" stroke="#7b848a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><g stroke="#d93636" stroke-width="3" stroke-linecap="round" fill="none"><circle cx="200" cy="150" r="6" fill="#d93636"/><path d="M200 156v19M200 161l-9 8M200 161l9 8M200 175l-7 13M200 175l7 13"/></g><g class="fx-fly" fill="#131619" stroke="#131619" stroke-linecap="round"><rect x="188" y="44" width="24" height="12" rx="4" stroke="none"/><path d="M174 47H188M212 47H226" stroke-width="3" fill="none"/><path d="M163 41H185M215 41H237" stroke-width="2.5" fill="none"/><path d="M174 41v6M226 41v6" stroke-width="2.5" fill="none"/><path d="M192 56l-4 9M208 56l4 9" stroke-width="2.5" fill="none"/></g><path d="M200 64L145 178L255 178Z" fill="#d93636" opacity=".18" class="fx-cone"/><g class="fx-pill"><rect x="215.2" y="100" width="139.6" height="24" rx="12" fill="#d93636"/><text x="285" y="117" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Survivor located</text></g><rect x="26" y="60" width="62" height="40" rx="6" fill="#fff" stroke="#131619" stroke-width="2.5"/><path d="M34 90l12 -14l10 8l14 -16" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="88" y1="76" x2="165" y2="54" stroke="#1f9d63" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 5" class="fx-dash" style="--dash:-40px"/><text x="57" y="120" fill="#131619" font-size="13" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Command</text></svg></figure>
     </div>
     <div class="problem-explain reveal">
       <p>After a flood, earthquake or wildfire, roads may be cut and networks may be down. Decisions still have to be made, often with only scattered reports.</p>
       <p>A drone gives command a view within minutes. It can map affected zones, search with a thermal camera and relay communications for teams on the ground.</p>
     </div>
-  </div>
 </section>
-
-<section class="section band">
-  <div class="container">
-    <div class="problem-two">
+<section class="pg-block" id="who">
+<div class="section-head reveal"><div><span class="eyebrow">Who It Affects</span><h2>Who faces this problem</h2></div></div>
+    <div class="tiles">
+      <div class="tile reveal"><h3>Disaster response forces</h3><p>Teams need to see cut-off areas before they can reach them.</p></div>
+      <div class="tile reveal"><h3>District administrations</h3><p>Decisions need a shared picture of damage and access routes.</p></div>
+      <div class="tile reveal"><h3>Relief agencies</h3><p>Knowing which routes are open helps get supplies to people.</p></div>
+    </div>
+</section>
+<section class="pg-block" id="signs">
+<div class="problem-two">
       <div class="problem-list problem-list--signs reveal">
         <span class="eyebrow">Identify It</span>
         <h2>Signs you have this problem</h2>
@@ -127,75 +158,85 @@
         </ul>
       </div>
     </div>
-  </div>
 </section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head reveal"><div><span class="eyebrow">Why It Happens</span><h2>The main causes</h2></div></div>
+<section class="pg-block" id="causes">
+<div class="section-head reveal"><div><span class="eyebrow">Why It Happens</span><h2>The main causes</h2></div></div>
     <div class="tiles">
       <div class="tile reveal"><div class="tile__no">01</div><h3>Access</h3><p>Damaged roads and water keep teams from reaching affected areas.</p></div>
       <div class="tile reveal"><div class="tile__no">02</div><h3>Communications</h3><p>Towers and power can fail exactly when they are needed.</p></div>
       <div class="tile reveal"><div class="tile__no">03</div><h3>Time</h3><p>Every hour without information delays the response.</p></div>
     </div>
-  </div>
 </section>
-
-<section class="section band">
-  <div class="container">
-    <div class="section-head reveal"><div><span class="eyebrow">Side By Side</span><h2>Before and after</h2></div></div>
+<section class="pg-block" id="compare">
+<div class="section-head reveal"><div><span class="eyebrow">Side By Side</span><h2>Before and after</h2></div></div>
     <div class="compare">
       <div class="compare-row reveal"><div class="compare-row__k">Getting a view</div><div class="compare-row__bad"><span>Without</span>Ground teams, slowly</div><div class="compare-row__good"><span>With Decouvertes</span>Airborne within minutes</div></div>
       <div class="compare-row reveal"><div class="compare-row__k">Finding survivors</div><div class="compare-row__bad"><span>Without</span>Search on foot</div><div class="compare-row__good"><span>With Decouvertes</span>Thermal search-and-rescue payload</div></div>
       <div class="compare-row reveal"><div class="compare-row__k">Team comms</div><div class="compare-row__bad"><span>Without</span>Lost with the network</div><div class="compare-row__good"><span>With Decouvertes</span>Mesh comms relay</div></div>
       <div class="compare-row reveal"><div class="compare-row__k">Command picture</div><div class="compare-row__bad"><span>Without</span>Scattered reports</div><div class="compare-row__good"><span>With Decouvertes</span>Live shared map at the command post</div></div>
     </div>
-  </div>
 </section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head reveal"><div><span class="eyebrow">Implement It</span><h2>How to solve it, step by step</h2></div></div>
+<section class="pg-block" id="steps">
+<div class="section-head reveal"><div><span class="eyebrow">Implement It</span><h2>How to solve it, step by step</h2></div></div>
     <ol class="flow">
       <li class="flow__step reveal"><span class="flow__no">1</span><h3>Deploy</h3><p>Launch within minutes from any open ground.</p></li>
       <li class="flow__step reveal"><span class="flow__no">2</span><h3>Map</h3><p>Map the affected zones and share them live.</p></li>
       <li class="flow__step reveal"><span class="flow__no">3</span><h3>Search</h3><p>Use thermal imaging to locate survivors.</p></li>
       <li class="flow__step reveal"><span class="flow__no">4</span><h3>Connect</h3><p>Relay communications where the network is down.</p></li>
     </ol>
-  </div>
 </section>
-
-<section class="section band">
-  <div class="container">
-    <div class="section-head reveal"><div><span class="eyebrow">Recommended</span><h2>What to use</h2></div></div>
-    <div class="tiles">
-      <a class="tile reveal" href="../products/vision-4.html"><h3>Vision 4.0</h3><p>Heavy-payload drone used for search and rescue.</p><span class="tlink">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      <a class="tile reveal" href="../products/sandesh-device.html"><h3>Sandesh Device</h3><p>Encrypted messaging with no mobile network.</p><span class="tlink">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      <a class="tile reveal" href="../solutions.html#disaster"><h3>Disaster capability</h3><p>Payloads and the shared incident map.</p><span class="tlink">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+<section class="pg-block" id="mistakes">
+<div class="problem-two">
+      <div class="problem-list problem-list--avoid reveal">
+        <span class="eyebrow">Avoid These</span>
+        <h2>Common mistakes</h2>
+        <ul>
+        <li>Buying equipment but never practising with it before an emergency</li>
+        <li>Depending on mobile networks for coordination</li>
+        <li>Having no plan for sharing what the drone finds</li>
+        <li>Forgetting that rescue helicopters may share the same airspace</li>
+        </ul>
+      </div>
+      <div class="problem-list problem-list--ask reveal d1">
+        <span class="eyebrow">Before You Decide</span>
+        <h2>Questions to ask a supplier</h2>
+        <ul>
+        <li>How quickly can a trained team get the aircraft flying?</li>
+        <li>Does it work with no mobile network?</li>
+        <li>Can it fly in the wind and rain we should expect?</li>
+        <li>How is airspace coordinated with other responders?</li>
+        </ul>
+      </div>
     </div>
-  </div>
 </section>
-
-<section class="section" id="faq">
-  <div class="container">
-    <div class="faq-layout">
-      <div class="faq-intro reveal"><span class="eyebrow">Questions</span><h2>Common questions</h2></div>
-      <div class="faq reveal">
+<section class="pg-block" id="use">
+<div class="section-head reveal"><div><span class="eyebrow">Recommended</span><h2>What to use</h2></div></div>
+    <div class="tiles">
+      <a class="tile reveal" href="../products/vision-4.html"><h3>Vision 4.0</h3><p>Heavy-payload drone used for search and rescue.</p><span class="tlink">Explore Vision 4.0 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="tile reveal" href="../products/sandesh-device.html"><h3>Sandesh Device</h3><p>Encrypted messaging with no mobile network.</p><span class="tlink">Explore Sandesh Device <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="tile reveal" href="../solutions.html#disaster"><h3>Disaster capability</h3><p>Payloads and the shared incident map.</p><span class="tlink">Explore Disaster capability <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+</section>
+<section class="pg-block" id="faq">
+<div class="section-head reveal"><div><span class="eyebrow">Questions</span><h2>Common questions</h2></div></div>
+    <div class="faq reveal">
       <details><summary>How quickly can a drone deploy in a disaster?</summary><p>Our platforms are designed to deploy within minutes. Plan and practise in advance, because real response time depends on your team and location.</p></details>
       <details><summary>Can drones find survivors?</summary><p>Thermal imaging can help locate people, especially against a cooler background. Ground teams still confirm and carry out the rescue.</p></details>
       <details><summary>Can drones work without a mobile network?</summary><p>Yes. Flight does not depend on mobile coverage, and a mesh relay can help connect teams where infrastructure is down.</p></details>
-      </div>
+      <details><summary>What should an emergency drone team practise?</summary><p>Fast set-up, flying in poor conditions, passing findings to command, and coordinating with other responders and aircraft.</p></details>
+      <details><summary>How can a disaster team stay connected without a network?</summary><p>Mesh devices such as Sandesh link directly to one another, with no SIM, tower or internet connection.</p></details>
     </div>
-  </div>
 </section>
+  </div>
+</div>
 
 <section class="section band">
   <div class="container">
     <div class="section-head reveal"><div><span class="eyebrow">Keep Reading</span><h2>Related problems</h2></div></div>
     <div class="tiles">
-      <a class="tile reveal" href="../problems/search-for-missing-persons.html"><div class="problem-card__tag">Public safety</div><h3>Finding missing people</h3><p>Forests, hills and flooded land are slow to search on foot, and time matters.</p><span class="tlink">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      <a class="tile reveal" href="../problems/no-network-communication.html"><div class="problem-card__tag">Communications</div><h3>No network in the field</h3><p>Remote terrain, border areas and disaster zones often have no coverage at all.</p><span class="tlink">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      <a class="tile reveal" href="../problems/gps-jamming.html"><div class="problem-card__tag">Defence</div><h3>GPS jamming and spoofing</h3><p>Satellite signals are easy to jam, spoof or block, and a drone that depends on them can drift or be lost.</p><span class="tlink">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="tile reveal" href="../problems/search-for-missing-persons.html"><div class="problem-card__tag">Public safety</div><h3>Finding missing people</h3><p>Forests, hills and flooded land are slow to search on foot, and time matters.</p><span class="tlink">Read this guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="tile reveal" href="../problems/no-network-communication.html"><div class="problem-card__tag">Communications</div><h3>No network in the field</h3><p>Remote terrain, border areas and disaster zones often have no coverage at all.</p><span class="tlink">Read this guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="tile reveal" href="../problems/gps-jamming.html"><div class="problem-card__tag">Defence</div><h3>GPS jamming and spoofing</h3><p>Satellite signals are easy to jam, spoof or block, and a drone that depends on them can drift or be lost.</p><span class="tlink">Read this guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
     </div>
     <p class="problem-next"><a class="tlink" href="../problems/index.html">&larr; All problems</a><a class="tlink" href="../problems/no-network-communication.html">Next: No network in the field <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
   </div>

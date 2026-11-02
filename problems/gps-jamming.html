@@ -24,7 +24,7 @@
 <meta name="twitter:description" content="How GPS jamming and spoofing put drone missions at risk, and how GPS-denied navigation keeps a UAV on course without a satellite fix." />
 <meta name="twitter:image" content="https://www.decouvertes.in/assets/img/gallery/flight-clouds-1.jpg" />
 <meta name="theme-color" content="#10161a" />
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.decouvertes.in/"},{"@type":"ListItem","position":2,"name":"Problems We Solve","item":"https://www.decouvertes.in/problems/"},{"@type":"ListItem","position":3,"name":"GPS jamming and spoofing","item":"https://www.decouvertes.in/problems/gps-jamming.html"}]},{"@type":"Article","headline":"When GPS is jammed, the drone must still fly the mission","description":"How GPS jamming and spoofing put drone missions at risk, and how GPS-denied navigation keeps a UAV on course without a satellite fix.","image":["https://www.decouvertes.in/assets/img/gallery/flight-clouds-1.jpg"],"datePublished":"2026-11-02T10:00:00+05:30","dateModified":"2026-11-02T10:00:00+05:30","author":{"@id":"https://www.decouvertes.in/#organization"},"publisher":{"@id":"https://www.decouvertes.in/#organization"},"mainEntityOfPage":"https://www.decouvertes.in/problems/gps-jamming.html"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between GPS jamming and spoofing?","acceptedAnswer":{"@type":"Answer","text":"Jamming blocks the satellite signal, so the drone knows it has no fix. Spoofing sends a false signal, so the drone may believe a wrong position, which can be harder to detect."}},{"@type":"Question","name":"Can a drone fly without GPS?","acceptedAnswer":{"@type":"Answer","text":"Yes, if it has GPS-denied navigation. It estimates its own movement from on-board sensors such as a camera, motion sensors, barometer, optical flow and a rangefinder."}},{"@type":"Question","name":"Which Decouvertes drones support GPS-denied navigation?","acceptedAnswer":{"@type":"Answer","text":"Our Products page lists GPS-denied navigation for Vision 2.0, Vision 3.0 and Vision 4.0."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.decouvertes.in/"},{"@type":"ListItem","position":2,"name":"Problems We Solve","item":"https://www.decouvertes.in/problems/"},{"@type":"ListItem","position":3,"name":"GPS jamming and spoofing","item":"https://www.decouvertes.in/problems/gps-jamming.html"}]},{"@type":"Article","headline":"When GPS is jammed, the drone must still fly the mission","description":"How GPS jamming and spoofing put drone missions at risk, and how GPS-denied navigation keeps a UAV on course without a satellite fix.","image":["https://www.decouvertes.in/assets/img/gallery/flight-clouds-1.jpg"],"datePublished":"2026-11-02T10:00:00+05:30","dateModified":"2026-11-02","author":{"@id":"https://www.decouvertes.in/#organization"},"publisher":{"@id":"https://www.decouvertes.in/#organization"},"mainEntityOfPage":"https://www.decouvertes.in/problems/gps-jamming.html"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between GPS jamming and spoofing?","acceptedAnswer":{"@type":"Answer","text":"Jamming blocks the satellite signal, so the drone knows it has no fix. Spoofing sends a false signal, so the drone may believe a wrong position, which can be harder to detect."}},{"@type":"Question","name":"Can a drone fly without GPS?","acceptedAnswer":{"@type":"Answer","text":"Yes, if it has GPS-denied navigation. It estimates its own movement from on-board sensors such as a camera, motion sensors, barometer, optical flow and a rangefinder."}},{"@type":"Question","name":"Which Decouvertes drones support GPS-denied navigation?","acceptedAnswer":{"@type":"Answer","text":"Our Products page lists GPS-denied navigation for Vision 2.0, Vision 3.0 and Vision 4.0."}},{"@type":"Question","name":"What does a drone do when it loses GPS?","acceptedAnswer":{"@type":"Answer","text":"It depends on the aircraft. Many hover, drift, land or try to return home. A drone with GPS-denied navigation keeps estimating its position from on-board sensors, which gives the operator more options."}},{"@type":"Question","name":"Do visual navigation systems work at night or over water?","acceptedAnswer":{"@type":"Answer","text":"They can struggle where the camera sees little detail, such as darkness, fog or open water. That is why fusing several sensors matters. Ask any supplier how their system behaves in your conditions."}}]}]}</script>
 <!-- /SEO -->
 <link rel="icon" href="/favicon.ico" sizes="48x48" />
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
@@ -89,23 +89,54 @@
   <span class="page-hero__strip"></span>
 </section>
 
-<section class="section">
+<section class="pg-summary" aria-label="At a glance">
   <div class="container">
-    <div class="section-head reveal"><div><span class="eyebrow">The Problem</span><h2>Why do drones lose GPS, and what happens next?</h2><p>Most drones trust satellite navigation completely. In a contested area, or simply in a deep valley, that signal can disappear or lie. The aircraft then loses its position just when the team needs it most.</p></div></div>
+    <div class="pg-summary__grid">
+      <div><span>Who faces it</span><p>Defence, border security and teams flying near sensitive sites.</p></div>
+      <div><span>The main risk</span><p>The aircraft drifts, lands in the wrong place or is lost, and the mission ends early.</p></div>
+      <div><span>What helps</span><p>Navigation that keeps working from on-board sensors when satellite data can&rsquo;t be trusted.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="container pg-layout">
+  <nav class="pg-toc" aria-label="On this page">
+    <p>On this page</p>
+    <ul>
+      <li><a href="#problem">The problem</a></li>
+      <li><a href="#who">Who it affects</a></li>
+      <li><a href="#signs">Signs and what to look for</a></li>
+      <li><a href="#causes">Main causes</a></li>
+      <li><a href="#compare">Before and after</a></li>
+      <li><a href="#steps">How to solve it</a></li>
+      <li><a href="#mistakes">Mistakes and questions</a></li>
+      <li><a href="#use">What to use</a></li>
+      <li><a href="#faq">Common questions</a></li>
+    </ul>
+    <a class="btn btn--solid" href="../contact.html">Talk to Our Team</a>
+  </nav>
+  <div class="pg-main">
+<section class="pg-block" id="problem">
+<div class="section-head reveal"><div><span class="eyebrow">The Problem</span><h2>Why do drones lose GPS, and what happens next?</h2><p>Most drones trust satellite navigation completely. In a contested area, or simply in a deep valley, that signal can disappear or lie. The aircraft then loses its position just when the team needs it most.</p></div></div>
     <div class="scene">
-      <figure class="scene__panel scene__panel--bad reveal"><figcaption><strong>The problem</strong>A jammer blocks the signal, so the drone drifts off its route.</figcaption><svg viewBox="0 0 360 240" role="img" aria-label="A jammer blocks the signal, so the drone drifts off its route." xmlns="http://www.w3.org/2000/svg"><g fill="#d93636" stroke="#d93636" stroke-linecap="round"><rect x="223" y="56" width="24" height="12" rx="4" stroke="none"/><path d="M209 59H223M247 59H261" stroke-width="3" fill="none"/><path d="M198 53H220M250 53H272" stroke-width="2.5" fill="none"/><path d="M209 53v6M261 53v6" stroke-width="2.5" fill="none"/><path d="M227 68l-4 9M243 68l4 9" stroke-width="2.5" fill="none"/></g><path d="M60 40C100 44 120 70 150 56S190 40 196 60" fill="none" stroke="#d93636" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 6"/><line x1="50" y1="42" x2="150" y2="110" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 6"/><circle cx="42" cy="36" r="13" fill="#7b848a"/><path d="M22 36h40" fill="none" stroke="#7b848a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="112" cy="84" r="14" fill="#fff" stroke="#d93636" stroke-width="2.5"/><path d="M106.5 78.5l11 11M117.5 78.5l-11 11" fill="none" stroke="#d93636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M56 205L72 145L88 205M63 184.0H81M67 164.2H77" fill="none" stroke="#d93636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M60 146a12 12 0 0 1 24 0" fill="none" stroke="#d93636" stroke-width="2.5" stroke-linecap="round"/><path d="M48 146a24 24 0 0 1 48 0" fill="none" stroke="#d93636" stroke-width="2.5" stroke-linecap="round"/><path d="M36 146a36 36 0 0 1 72 0" fill="none" stroke="#d93636" stroke-width="2.5" stroke-linecap="round"/><line x1="14" y1="205" x2="346" y2="205" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round"/><rect x="186.6" y="144" width="116.8" height="24" rx="12" fill="#d93636"/><text x="245" y="161" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Position lost</text></svg></figure>
-      <figure class="scene__panel scene__panel--good reveal d1"><figcaption><strong>The solution</strong>On-board sensors take over and keep the aircraft on course.</figcaption><svg viewBox="0 0 360 240" role="img" aria-label="On-board sensors take over and keep the aircraft on course." xmlns="http://www.w3.org/2000/svg"><g fill="#131619" stroke="#131619" stroke-linecap="round"><rect x="243" y="60" width="24" height="12" rx="4" stroke="none"/><path d="M229 63H243M267 63H281" stroke-width="3" fill="none"/><path d="M218 57H240M270 57H292" stroke-width="2.5" fill="none"/><path d="M229 57v6M281 57v6" stroke-width="2.5" fill="none"/><path d="M247 72l-4 9M263 72l4 9" stroke-width="2.5" fill="none"/></g><path d="M50 88H200" fill="none" stroke="#1f9d63" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M192 80l9 8l-9 8" fill="none" stroke="#1f9d63" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="38.2" y="134" width="63.599999999999994" height="24" rx="12" fill="#131619"/><text x="70" y="151" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Camera</text><rect x="117.80000000000001" y="134" width="124.39999999999999" height="24" rx="12" fill="#131619"/><text x="180" y="151" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Motion sensors</text><rect x="270.0" y="134" width="56.0" height="24" rx="12" fill="#131619"/><text x="298" y="151" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Range</text><line x1="70" y1="134" x2="235" y2="78" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/><line x1="180" y1="134" x2="248" y2="78" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/><line x1="298" y1="134" x2="262" y2="78" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/><line x1="14" y1="205" x2="346" y2="205" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round"/><circle cx="308" cy="44" r="14" fill="#1f9d63"/><path d="M302.5 44l4.583333333333334 4.583333333333334l7.699999999999999 -7.699999999999999" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></figure>
+      <figure class="scene__panel scene__panel--bad reveal"><figcaption><strong>The problem</strong>A jammer blocks the signal, so the drone drifts off its route.</figcaption><svg viewBox="0 11 360 206" role="img" aria-label="A jammer blocks the signal, so the drone drifts off its route." xmlns="http://www.w3.org/2000/svg"><g class="fx-fly" fill="#d93636" stroke="#d93636" stroke-linecap="round"><rect x="223" y="56" width="24" height="12" rx="4" stroke="none"/><path d="M209 59H223M247 59H261" stroke-width="3" fill="none"/><path d="M198 53H220M250 53H272" stroke-width="2.5" fill="none"/><path d="M209 53v6M261 53v6" stroke-width="2.5" fill="none"/><path d="M227 68l-4 9M243 68l4 9" stroke-width="2.5" fill="none"/></g><path d="M60 40C100 44 120 70 150 56S190 40 196 60" fill="none" stroke="#d93636" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 6" class="fx-dash" style="--dash:-48px"/><line x1="50" y1="42" x2="150" y2="110" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 6" class="fx-dash" style="--dash:-40px"/><circle cx="42" cy="36" r="13" fill="#7b848a"/><path d="M22 36h40" fill="none" stroke="#7b848a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><g class="fx-badge"><circle cx="112" cy="84" r="14" fill="#fff" stroke="#d93636" stroke-width="2.5"/><path d="M106.5 78.5l11 11M117.5 78.5l-11 11" fill="none" stroke="#d93636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g><path d="M56 205L72 145L88 205M63 184.0H81M67 164.2H77" fill="none" stroke="#d93636" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M60 146a12 12 0 0 1 24 0" fill="none" stroke="#d93636" stroke-width="2.5" stroke-linecap="round" class="fx-wave" style="animation-delay:0.0s"/><path d="M48 146a24 24 0 0 1 48 0" fill="none" stroke="#d93636" stroke-width="2.5" stroke-linecap="round" class="fx-wave" style="animation-delay:0.3s"/><path d="M36 146a36 36 0 0 1 72 0" fill="none" stroke="#d93636" stroke-width="2.5" stroke-linecap="round" class="fx-wave" style="animation-delay:0.6s"/><line x1="14" y1="205" x2="346" y2="205" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round"/><g class="fx-pill"><rect x="186.6" y="144" width="116.8" height="24" rx="12" fill="#d93636"/><text x="245" y="161" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Position lost</text></g></svg></figure>
+      <figure class="scene__panel scene__panel--good reveal d1"><figcaption><strong>The solution</strong>On-board sensors take over and keep the aircraft on course.</figcaption><svg viewBox="0 11 360 206" role="img" aria-label="On-board sensors take over and keep the aircraft on course." xmlns="http://www.w3.org/2000/svg"><g class="fx-fly" fill="#131619" stroke="#131619" stroke-linecap="round"><rect x="243" y="60" width="24" height="12" rx="4" stroke="none"/><path d="M229 63H243M267 63H281" stroke-width="3" fill="none"/><path d="M218 57H240M270 57H292" stroke-width="2.5" fill="none"/><path d="M229 57v6M281 57v6" stroke-width="2.5" fill="none"/><path d="M247 72l-4 9M263 72l4 9" stroke-width="2.5" fill="none"/></g><path d="M50 88H200" fill="none" stroke="#1f9d63" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M192 80l9 8l-9 8" fill="none" stroke="#1f9d63" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><g class="fx-pill"><rect x="38.2" y="134" width="63.599999999999994" height="24" rx="12" fill="#131619"/><text x="70" y="151" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Camera</text></g><g class="fx-pill"><rect x="117.80000000000001" y="134" width="124.39999999999999" height="24" rx="12" fill="#131619"/><text x="180" y="151" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Motion sensors</text></g><g class="fx-pill"><rect x="270.0" y="134" width="56.0" height="24" rx="12" fill="#131619"/><text x="298" y="151" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Roboto,Arial,sans-serif">Range</text></g><line x1="70" y1="134" x2="235" y2="78" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5" class="fx-dash" style="--dash:-36px"/><line x1="180" y1="134" x2="248" y2="78" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5" class="fx-dash" style="--dash:-36px"/><line x1="298" y1="134" x2="262" y2="78" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5" class="fx-dash" style="--dash:-36px"/><line x1="14" y1="205" x2="346" y2="205" stroke="#c9d0d3" stroke-width="2" stroke-linecap="round"/><g class="fx-badge"><circle cx="308" cy="44" r="14" fill="#1f9d63"/><path d="M302.5 44l4.583333333333334 4.583333333333334l7.699999999999999 -7.699999999999999" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g></svg></figure>
     </div>
     <div class="problem-explain reveal">
       <p>GPS and other satellite signals are very weak by the time they reach the ground. A small transmitter can drown them out, and a false signal can convince a drone that it is somewhere else. Terrain and buildings can cause similar trouble with no adversary at all.</p>
       <p>What happens next depends on the aircraft. Many drones hover, drift, land or try to fly home using bad data. For surveillance or defence work, that can end the mission or lose the aircraft.</p>
     </div>
-  </div>
 </section>
-
-<section class="section band">
-  <div class="container">
-    <div class="problem-two">
+<section class="pg-block" id="who">
+<div class="section-head reveal"><div><span class="eyebrow">Who It Affects</span><h2>Who faces this problem</h2></div></div>
+    <div class="tiles">
+      <div class="tile reveal"><h3>Defence units</h3><p>Contested areas are where jamming is most likely, and where losing an aircraft costs the most.</p></div>
+      <div class="tile reveal"><h3>Border and security forces</h3><p>Patrols near borders and sensitive sites can meet interference with little warning.</p></div>
+      <div class="tile reveal"><h3>Teams in difficult terrain</h3><p>Valleys, dense cities and heavy structures can weaken satellite signals with no jammer present.</p></div>
+    </div>
+</section>
+<section class="pg-block" id="signs">
+<div class="problem-two">
       <div class="problem-list problem-list--signs reveal">
         <span class="eyebrow">Identify It</span>
         <h2>Signs you have this problem</h2>
@@ -127,75 +158,85 @@
         </ul>
       </div>
     </div>
-  </div>
 </section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head reveal"><div><span class="eyebrow">Why It Happens</span><h2>The main causes</h2></div></div>
+<section class="pg-block" id="causes">
+<div class="section-head reveal"><div><span class="eyebrow">Why It Happens</span><h2>The main causes</h2></div></div>
     <div class="tiles">
       <div class="tile reveal"><div class="tile__no">01</div><h3>Jamming</h3><p>A nearby transmitter drowns out the weak satellite signal, so the drone has no position fix.</p></div>
       <div class="tile reveal"><div class="tile__no">02</div><h3>Spoofing</h3><p>A false signal tells the drone it is somewhere else, and it flies the wrong way with full confidence.</p></div>
       <div class="tile reveal"><div class="tile__no">03</div><h3>Blockage</h3><p>Valleys, forests and buildings block or reflect the signal, even with no adversary around.</p></div>
     </div>
-  </div>
 </section>
-
-<section class="section band">
-  <div class="container">
-    <div class="section-head reveal"><div><span class="eyebrow">Side By Side</span><h2>Before and after</h2></div></div>
+<section class="pg-block" id="compare">
+<div class="section-head reveal"><div><span class="eyebrow">Side By Side</span><h2>Before and after</h2></div></div>
     <div class="compare">
       <div class="compare-row reveal"><div class="compare-row__k">When GPS drops</div><div class="compare-row__bad"><span>Without</span>Drifts, lands or is lost</div><div class="compare-row__good"><span>With Decouvertes</span>Automatic fallback to on-board navigation</div></div>
       <div class="compare-row reveal"><div class="compare-row__k">False signals</div><div class="compare-row__bad"><span>Without</span>Followed without question</div><div class="compare-row__good"><span>With Decouvertes</span>Detected as degraded or spoofed GNSS</div></div>
       <div class="compare-row reveal"><div class="compare-row__k">Holding position</div><div class="compare-row__bad"><span>Without</span>Needs a satellite fix</div><div class="compare-row__good"><span>With Decouvertes</span>Visual-inertial odometry holds position</div></div>
       <div class="compare-row reveal"><div class="compare-row__k">Coming home</div><div class="compare-row__bad"><span>Without</span>Waits for GPS to return</div><div class="compare-row__good"><span>With Decouvertes</span>Return-to-home without a satellite lock</div></div>
     </div>
-  </div>
 </section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head reveal"><div><span class="eyebrow">Implement It</span><h2>How to solve it, step by step</h2></div></div>
+<section class="pg-block" id="steps">
+<div class="section-head reveal"><div><span class="eyebrow">Implement It</span><h2>How to solve it, step by step</h2></div></div>
     <ol class="flow">
       <li class="flow__step reveal"><span class="flow__no">1</span><h3>Sense</h3><p>Camera, motion, barometer, optical-flow and range sensors run all the time.</p></li>
       <li class="flow__step reveal"><span class="flow__no">2</span><h3>Fuse</h3><p>Readings are blended so no single sensor can mislead the aircraft.</p></li>
       <li class="flow__step reveal"><span class="flow__no">3</span><h3>Switch</h3><p>When GNSS is degraded or spoofed, the on-board estimate takes over.</p></li>
       <li class="flow__step reveal"><span class="flow__no">4</span><h3>Finish</h3><p>The drone completes its route or returns home without a satellite lock.</p></li>
     </ol>
-  </div>
 </section>
-
-<section class="section band">
-  <div class="container">
-    <div class="section-head reveal"><div><span class="eyebrow">Recommended</span><h2>What to use</h2></div></div>
-    <div class="tiles">
-      <a class="tile reveal" href="../products/vision-2.html"><h3>Vision 2.0</h3><p>Foldable surveillance quadcopter built for contested areas.</p><span class="tlink">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      <a class="tile reveal" href="../solutions.html#gps-denied"><h3>GPS-denied capability</h3><p>The navigation features in detail.</p><span class="tlink">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      <a class="tile reveal" href="../gps-denied-drone-navigation.html"><h3>Explainer</h3><p>What GPS-denied navigation is and what to ask a supplier.</p><span class="tlink">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+<section class="pg-block" id="mistakes">
+<div class="problem-two">
+      <div class="problem-list problem-list--avoid reveal">
+        <span class="eyebrow">Avoid These</span>
+        <h2>Common mistakes</h2>
+        <ul>
+        <li>Testing only in open areas with a strong satellite signal</li>
+        <li>Assuming return-to-home will work when the position data is wrong</li>
+        <li>Treating jamming and spoofing as the same problem</li>
+        <li>Leaving GPS loss out of operator training and mission plans</li>
+        </ul>
+      </div>
+      <div class="problem-list problem-list--ask reveal d1">
+        <span class="eyebrow">Before You Decide</span>
+        <h2>Questions to ask a supplier</h2>
+        <ul>
+        <li>What exactly does the aircraft do when GPS is lost?</li>
+        <li>How does it detect a false signal, not just a missing one?</li>
+        <li>How has this been tested, and in what conditions?</li>
+        <li>How far does position accuracy drift over time without GPS?</li>
+        </ul>
+      </div>
     </div>
-  </div>
 </section>
-
-<section class="section" id="faq">
-  <div class="container">
-    <div class="faq-layout">
-      <div class="faq-intro reveal"><span class="eyebrow">Questions</span><h2>Common questions</h2></div>
-      <div class="faq reveal">
+<section class="pg-block" id="use">
+<div class="section-head reveal"><div><span class="eyebrow">Recommended</span><h2>What to use</h2></div></div>
+    <div class="tiles">
+      <a class="tile reveal" href="../products/vision-2.html"><h3>Vision 2.0</h3><p>Foldable surveillance quadcopter built for contested areas.</p><span class="tlink">Explore Vision 2.0 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="tile reveal" href="../solutions.html#gps-denied"><h3>GPS-denied capability</h3><p>The navigation features in detail.</p><span class="tlink">Explore GPS-denied capability <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="tile reveal" href="../gps-denied-drone-navigation.html"><h3>Explainer</h3><p>What GPS-denied navigation is and what to ask a supplier.</p><span class="tlink">Read the explainer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+</section>
+<section class="pg-block" id="faq">
+<div class="section-head reveal"><div><span class="eyebrow">Questions</span><h2>Common questions</h2></div></div>
+    <div class="faq reveal">
       <details><summary>What is the difference between GPS jamming and spoofing?</summary><p>Jamming blocks the satellite signal, so the drone knows it has no fix. Spoofing sends a false signal, so the drone may believe a wrong position, which can be harder to detect.</p></details>
       <details><summary>Can a drone fly without GPS?</summary><p>Yes, if it has GPS-denied navigation. It estimates its own movement from on-board sensors such as a camera, motion sensors, barometer, optical flow and a rangefinder.</p></details>
       <details><summary>Which Decouvertes drones support GPS-denied navigation?</summary><p>Our Products page lists GPS-denied navigation for Vision 2.0, Vision 3.0 and Vision 4.0.</p></details>
-      </div>
+      <details><summary>What does a drone do when it loses GPS?</summary><p>It depends on the aircraft. Many hover, drift, land or try to return home. A drone with GPS-denied navigation keeps estimating its position from on-board sensors, which gives the operator more options.</p></details>
+      <details><summary>Do visual navigation systems work at night or over water?</summary><p>They can struggle where the camera sees little detail, such as darkness, fog or open water. That is why fusing several sensors matters. Ask any supplier how their system behaves in your conditions.</p></details>
     </div>
-  </div>
 </section>
+  </div>
+</div>
 
 <section class="section band">
   <div class="container">
     <div class="section-head reveal"><div><span class="eyebrow">Keep Reading</span><h2>Related problems</h2></div></div>
     <div class="tiles">
-      <a class="tile reveal" href="../problems/wide-area-surveillance.html"><div class="problem-card__tag">Security</div><h3>Too much ground, too few eyes</h3><p>Borders, pipelines and large sites are too long to cover on foot or from fixed posts alone.</p><span class="tlink">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      <a class="tile reveal" href="../problems/artillery-fire-correction.html"><div class="problem-card__tag">Defence</div><h3>Correcting artillery fire safely</h3><p>Seeing where rounds land usually means putting a person at risk, and passing corrections back takes time.</p><span class="tlink">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      <a class="tile reveal" href="../problems/drone-battery-limits.html"><div class="problem-card__tag">Security</div><h3>Battery limits on overwatch</h3><p>Every free-flying drone must come down to recharge, which leaves a gap in what you can see.</p><span class="tlink">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="tile reveal" href="../problems/wide-area-surveillance.html"><div class="problem-card__tag">Security</div><h3>Too much ground, too few eyes</h3><p>Borders, pipelines and large sites are too long to cover on foot or from fixed posts alone.</p><span class="tlink">Read this guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="tile reveal" href="../problems/artillery-fire-correction.html"><div class="problem-card__tag">Defence</div><h3>Correcting artillery fire safely</h3><p>Seeing where rounds land usually means putting a person at risk, and passing corrections back takes time.</p><span class="tlink">Read this guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="tile reveal" href="../problems/drone-battery-limits.html"><div class="problem-card__tag">Security</div><h3>Battery limits on overwatch</h3><p>Every free-flying drone must come down to recharge, which leaves a gap in what you can see.</p><span class="tlink">Read this guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
     </div>
     <p class="problem-next"><a class="tlink" href="../problems/index.html">&larr; All problems</a><a class="tlink" href="../problems/wide-area-surveillance.html">Next: Too much ground, too few eyes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
   </div>

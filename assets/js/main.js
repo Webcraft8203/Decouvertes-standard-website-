@@ -300,3 +300,22 @@
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();
 })();
+
+/* Problem pages: mark the current section in the side menu */
+(function () {
+  var links = document.querySelectorAll(".pg-toc a[href^='#']");
+  if (!links.length || !("IntersectionObserver" in window)) return;
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute("href").slice(1)] = a; });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (!en.isIntersecting) return;
+      links.forEach(function (a) { a.classList.remove("is-current"); });
+      map[en.target.id].classList.add("is-current");
+    });
+  }, { rootMargin: "-25% 0px -70% 0px" });
+  Object.keys(map).forEach(function (id) {
+    var el = document.getElementById(id);
+    if (el) io.observe(el);
+  });
+})();
