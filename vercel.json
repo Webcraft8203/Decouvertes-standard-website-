@@ -44,5 +44,17 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/gps-jamming.html",
+      "destination": "/problems/gps-jamming.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/gps-jamming",
+      "destination": "/problems/gps-jamming.html",
+      "statusCode": 301
+    }
   ]
 }

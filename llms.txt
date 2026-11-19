@@ -8,6 +8,7 @@
 - [Vision 2.0](https://www.decouvertes.in/products/vision-2.html): foldable surveillance quadcopter with PTZ camera, GPS-denied navigation and AI autonomy, 25 km range
 - [Vision 3.0](https://www.decouvertes.in/products/vision-3.html): VTOL fixed-wing UAV, 50 km range, 45 min endurance
 - [Vision 4.0](https://www.decouvertes.in/products/vision-4.html): X8 coaxial heavy-payload drone, 5 kg payload, 50 min flight time, 35 km range
+- [Vision 4.0 product film](https://www.decouvertes.in/products/vision-4-product-film.html): one-minute film of the Vision 4.0
 - [All products](https://www.decouvertes.in/products/)
 
 ## Capabilities and software

@@ -436,4 +436,17 @@
     <lastmod>2026-11-02</lastmod>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.decouvertes.in/products/vision-4-product-film.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <priority>0.6</priority>
+    <video:video>
+      <video:thumbnail_loc>https://www.decouvertes.in/assets/videos/vision-4-product-film-poster.jpg</video:thumbnail_loc>
+      <video:title>Vision 4.0 product film</video:title>
+      <video:description>A one-minute film of the Decouvertes Vision 4.0 X8 coaxial multirotor: the platform, its headline figures and what it is used for.</video:description>
+      <video:content_loc>https://www.decouvertes.in/assets/videos/vision-4-product-film.mp4</video:content_loc>
+      <video:duration>60</video:duration>
+      <video:publication_date>2026-10-07T00:00:00+05:30</video:publication_date>
+    </video:video>
+  </url>
 </urlset>
